@@ -1,0 +1,228 @@
+@import "partials/constants";
+
+
+// all projects
+
+.text_first_row_all_projects{
+ margin: 0 auto;
+  margin-top:65px;
+  margin-bottom:125px;
+ width:75%;
+ background: rgb(255,255,255); 
+ 
+ h2{
+
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: $text_box_font_size;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: $text_box_font_size;
+ 
+ }
+ 
+ .radio_button{
+ margin-right:2em;
+ margin-top:1.5em;
+ float:right;
+ 
+ 
+ input[type='radio'] {
+  padding: 2px 0 0px 24px;
+ // background-color: red;
+ // background-image:url("../images/radio_unchecked.png");
+  border-color:red;
+ }
+ 
+  input[type='radio']:checked {
+  padding: 2px 0 0px 24px;
+ // background-color: red;
+ // background-image:url("../images/radio_checked.png");
+  border-color:red;
+ }
+ 
+ label{
+ margin-right:20px;
+ margin-left:5px;
+ 
+ }
+ 
+ 
+  p{
+  //text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: 1.1em;
+ 
+ }
+ 
+ }
+  
+}
+
+
+.box_first_row_all_projects{
+
+ max-width: 1063px;
+ margin-top:10em;
+ margin: 0 auto;
+ width:80%;
+ height: 1300px;
+ 
+ background: rgb(255,255,255); 
+ 
+ .project{
+ float:left;
+ margin-left:20px;
+ margin-bottom: 20px;
+ width:20%;
+ //height:20%;
+ min-width:237px;
+height: 216px;
+ position: relative;
+ 
+ }
+ 
+  .project img{
+  width:237px;
+  height: 216px;
+   }
+ 
+ 
+ .info_project{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+ background:black;
+height: 216px;
+width:100%;
+ color:white;
+display:none;
+
+h1{
+font-size: $text_box_font_size;
+}
+
+}
+ 
+  .project:hover .info_project {
+ display: block;
+ text-align: center;
+ background:black;
+ color:white;
+ opacity: 0.75;
+ 
+  }
+ }
+ 
+ .btnAllProjectDiv{
+ 
+ width:100%;
+margin-top:2em;
+ text-align:center;
+ margin-bottom:5em;
+
+ 
+  p{
+  margin-bottom:2.5em;
+   text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: $text_box_font_size;
+ 
+ }
+ 
+ 
+ .btnAllProject {
+margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+   border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+  
+ }
+ 
+ 
+ 
+ 
+ /*********MEDIA QUERY ALL PROJECTS *************/
+
+@media only screen and (min-width: 960px) and(max-width:1365px) {
+
+.row_image_internal{
+
+height: 275px;
+  
+	}
+
+
+.text_first_row_all_projects{
+margin-top:2em;
+p{
+font-size:1.35em;
+}
+}
+
+.box_first_row_all_projects{
+
+height:2350px;
+width:550px;
+
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+
+.row_image_internal{
+
+height: 225px;
+  
+}
+
+.text_first_row_all_projects{
+margin-top:2em;
+p{
+font-size:1.25em;
+}
+}
+
+.box_first_row_all_projects{
+
+height:2350px;
+width:550px;
+
+}
+ 
+
+
+
+
+
+}
+ 
+ 
+ 
+ 
+ 
+
+
+

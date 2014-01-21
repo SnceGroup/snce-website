@@ -1,0 +1,404 @@
+@import "compass";
+@import "partials/normalize";
+@import "partials/blankwork";
+@import "partials/settings";
+@import "partials/header";
+@import "partials/constants";
+@import "spr/*.png";
+
+
+
+
+
+ //IMPOSTAZIONI GENERALI
+
+
+body{
+color: $ligthFont;
+font-size:$font_size; 
+line-height:$line_height;
+}
+
+a{
+color: $linkColor;
+&.hover {
+color:$linkHover;
+}
+}
+
+ 
+
+ //PRIMA RIGA
+
+
+.first_row{
+
+margin: 0 auto;
+width:100%;
+background: rgb(255,255,255); 
+
+.text_first_row{
+
+ margin: 0 auto;
+ width:80%;
+ background: rgb(255,255,255); 
+ 
+ h2{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: 1.5em;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: 1.5em;
+ 
+ }
+}
+.box_first_row{
+
+ margin: 0 auto;
+ width:80%;
+ height: 280px;
+ 
+ background: rgb(255,255,255); 
+ 
+ .project{
+ float:left;
+ margin-left:20px;
+ width:20%;
+ height:20%;
+ min-width:237px;
+min-height: 216px;
+ position: relative;
+ 
+ }
+ .project:first-child { margin-left: 0; }
+
+
+
+  .project img{
+  width:237px;
+  height: 216px;
+   }
+ 
+ 
+ .info_project{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+ background:black;
+height: 100%;
+width:100%;
+ 
+ color:white;
+display:none;
+
+h1{
+font-size: 1.5em;
+}
+
+}
+ 
+  .project:hover .info_project {
+ display: block;
+ text-align: center;
+ background:black;
+ color:white;
+ opacity: 0.75;
+ 
+  }
+ 
+ .group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+
+
+ 
+ .span_4_of_4 {
+	width: 100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%; 
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 20.8%; 
+}
+ 
+ 
+ @media only screen and (max-width: 1302px) {
+	.box_first_row { 
+		width:80%;
+	}
+	
+	
+	.project { 
+		//margin: 1% 1% 1% 1%%;
+		margin: 0 auto;
+		  margin-left: auto;
+		  margin-bottom:3em;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+	}
+	
+	.info_project{
+	margin-left:100em;
+margin: 0 auto;
+  width:237px;
+  height: 216px;
+	}
+	
+	
+	 .project img{
+	 margin: 0 auto;
+  width:237px;
+  height: 216px;
+   }
+}
+
+@media only screen and (max-width: 1302px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 20.8%; 
+	}
+	.span_1_of_4 {
+		width: 44%; 
+		 
+		
+	}
+	
+
+	
+}
+
+ 
+ 
+ 
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .btnAllProjectDiv{
+ 
+ width:100%;
+
+ text-align:center;
+ 
+ 
+ .btnAllProject {
+
+margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+   border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+  
+ }
+ }
+  //SECONDA RIGA
+  .second_row{
+margin-top:5em;
+margin: 0 auto;
+width:100%;
+background: rgb(32,32,32); 
+
+.text_second_row{
+margin-top:5em;
+ margin: 0 auto;
+ width:80%;
+ background: rgb(32,32,32); 
+ 
+ h2{
+ 
+  text-align: center;
+   color: rgb(255, 255, 255 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: 1.5em;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: 1.5em;
+ 
+ }
+}
+
+.box_second_row{
+
+ margin: 0 auto;
+ width:80%;
+ height: 500px;
+ background: rgb(32,32,32); 
+
+.skill{
+ float:left;
+ margin-top: 20px;
+ margin-left:20px;
+ width:237px;
+ height: 216px;
+ position: relative;
+ background: rgb(32,32,32);
+ color: rgb(255,255,255);
+ text-align: center;
+ vertical-align: middle;
+ }
+ 
+ 
+  .skill img{
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width:52px;
+  height: 52px;
+   }
+   
+   .info_skill{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+background: rgb(32,32,32);
+height: 100%;
+width:100%;
+ color:white;
+display:none;
+}
+
+
+.info_skill img{
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width:40px;
+  height: 40px;
+   }
+
+
+ 
+  .skill:hover .info_skill {
+ display: block;
+ text-align: center;
+background: rgb(32,32,32);
+ color:white;
+
+ 
+  }
+ 
+}
+} 
+
+ //TERZA RIGA
+
+
+.third_row{
+
+margin: 0 auto;
+width:100%;
+background: rgb(255,255,255); 
+
+.text_third_row{
+
+ margin: 0 auto;
+ width:80%;
+ background: rgb(255,255,255); 
+ 
+ h2{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: 1.5em;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: 1.5em;
+ 
+ }
+}
+ .btnAllProjectDiv{
+ 
+ width:100%;
+
+ text-align:center;
+ 
+ 
+ .btnAllProject {
+
+margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+   border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+  
+ }
+
+
+}
+
+

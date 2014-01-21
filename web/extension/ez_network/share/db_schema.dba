@@ -1,0 +1,1478 @@
+<?php
+// This array contains the database schema
+$schema = array (
+  'ezx_ezpnet_branch' => 
+  array (
+    'name' => 'ezx_ezpnet_branch',
+    'fields' => 
+    array (
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'url' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'status',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_installation' => 
+  array (
+    'name' => 'ezx_ezpnet_installation',
+    'fields' => 
+    array (
+      'branch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'customer_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'object_count' => 
+      array (
+        'length' => 20,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'email_notifications' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'is_enabled' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 1,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'multi_db_enabled' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'patch_mode' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'remote_id' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'status',
+        ),
+      ),
+      'ezx_ezpnet_installation_cust_id' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'customer_id',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_large_store' => 
+  array (
+    'name' => 'ezx_ezpnet_large_store',
+    'fields' => 
+    array (
+      'class_name' => 
+      array (
+        'length' => 130,
+        'type' => 'varchar',
+        'not_null' => '1',
+        'default' => '',
+      ),
+      'data' => 
+      array (
+        'type' => 'longtext',
+        'not_null' => '1',
+        'default' => false,
+      ),
+      'field' => 
+      array (
+        'length' => 130,
+        'type' => 'varchar',
+        'not_null' => '1',
+        'default' => '',
+      ),
+      'key_hash' => 
+      array (
+        'length' => 32,
+        'type' => 'varchar',
+        'not_null' => '1',
+        'default' => '',
+      ),
+      'data_offset' =>
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'class_name',
+          1 => 'key_hash',
+          2 => 'field',
+          3 => 'data_offset',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_mod_patch_item' => 
+  array (
+    'name' => 'ezx_ezpnet_mod_patch_item',
+    'fields' => 
+    array (
+      'finnished' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'fmode' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'installation_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'module_patch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'node_id' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'started' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_module_branch' => 
+  array (
+    'name' => 'ezx_ezpnet_module_branch',
+    'fields' => 
+    array (
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'is_certified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 1,
+      ),
+      'branch_id' =>
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'url' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'version_identifier' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'status',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_module_inst' => 
+  array (
+    'name' => 'ezx_ezpnet_module_inst',
+    'fields' => 
+    array (
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'email_notifications' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'enabled' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 1,
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'installation_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'module_branch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'status',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_module_patch' => 
+  array (
+    'name' => 'ezx_ezpnet_module_patch',
+    'fields' => 
+    array (
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'filedata' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'module_branch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'options' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'original_filename' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'required_patch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'status_info' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'version_status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'version_status',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_mon_group' => 
+  array (
+    'name' => 'ezx_ezpnet_mon_group',
+    'fields' => 
+    array (
+      'branch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'max_frequency' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 4,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'show_result' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 1,
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'status',
+        ),
+      ),
+      'ezx_ezpnet_mon_group_branch_id' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'branch_id',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_mon_item' => 
+  array (
+    'name' => 'ezx_ezpnet_mon_item',
+    'fields' => 
+    array (
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'enabled' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'function_data' => 
+      array (
+        'type' => 'longtext',
+        'not_null' => '1',
+        'default' => false,
+      ),
+      'graph_type' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'monitor_group_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'original_filename' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'per_database' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'severity' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 1,
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'status',
+        ),
+      ),
+      'idx_mon_item_group_id' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'monitor_group_id',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_mon_result' => 
+  array (
+    'name' => 'ezx_ezpnet_mon_result',
+    'fields' => 
+    array (
+      'finnished' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'installation_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'node_id' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'started' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'ezx_ezpnet_mon_result_finnished' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'finnished',
+        ),
+      ),
+      'ezx_ezpnet_mon_result_inst_id' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'installation_id',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_mon_value' => 
+  array (
+    'name' => 'ezx_ezpnet_mon_value',
+    'fields' => 
+    array (
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'installation_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'monitor_item_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'monitor_result_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'node_id' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'success' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 1,
+      ),
+      'value' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_patch' => 
+  array (
+    'name' => 'ezx_ezpnet_patch',
+    'fields' => 
+    array (
+      'branch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'creator_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'description' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'filedata' => 
+      array (
+        'type' => 'longtext',
+        'not_null' => '1',
+        'default' => false,
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'options' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'original_filename' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'required_patch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'status_info' => 
+      array (
+        'type' => 'longtext',
+        'default' => false,
+      ),
+      'version_status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+          1 => 'version_status',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_patch_item' => 
+  array (
+    'name' => 'ezx_ezpnet_patch_item',
+    'fields' => 
+    array (
+      'finnished' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'fmode' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'installation_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'node_id' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'patch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'started' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'status' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'ezx_ezpnet_patch_item_inst_id' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'installation_id',
+        ),
+      ),
+      'ezx_ezpnet_patch_item_status' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'status',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_patch_sql_st' => 
+  array (
+    'name' => 'ezx_ezpnet_patch_sql_st',
+    'fields' => 
+    array (
+      'base_patch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'created' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'db_name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'installation_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'is_enabled' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 1,
+      ),
+      'latest_patch_id' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'site_access' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_soap_log' => 
+  array (
+    'name' => 'ezx_ezpnet_soap_log',
+    'fields' => 
+    array (
+      'class_name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'extended_filter' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'id' => 
+      array (
+        'type' => 'auto_increment',
+        'default' => false,
+      ),
+      'key_name' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'local_value' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'remote_host' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'remote_modified' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'remote_value' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'timestamp' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'idx_remote_modified' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'remote_modified',
+        ),
+      ),
+      'idx_remote_val' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'remote_value',
+        ),
+      ),
+      'idx_remote_val_host' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'remote_host',
+          1 => 'remote_value',
+        ),
+      ),
+    ),
+  ),
+  'ezx_ezpnet_storage' => 
+  array (
+    'name' => 'ezx_ezpnet_storage',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'not_null' => '1',
+        'default' => '',
+      ),
+      'id2' => 
+      array (
+        'length' => 255,
+        'type' => 'varchar',
+        'not_null' => '1',
+        'default' => '',
+      ),
+      'value' => 
+      array (
+        'type' => 'longtext',
+        'not_null' => '1',
+        'default' => false,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'id' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'id2' => 
+      array (
+        'type' => 'non-unique',
+        'fields' => 
+        array (
+          0 => 'id2',
+        ),
+      ),
+    ),
+  ),
+  'ezx_oauth_client_consumer_user' => 
+  array (
+    'name' => 'ezx_oauth_client_consumer_user',
+    'fields' => 
+    array (
+      'access_token' => 
+      array (
+        'length' => 64,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'access_token_secret' => 
+      array (
+        'length' => 64,
+        'type' => 'varchar',
+        'default' => '',
+      ),
+      'access_token_ttl' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'ts' => 
+      array (
+        'length' => 11,
+        'type' => 'int',
+        'not_null' => '1',
+        'default' => 0,
+      ),
+      'user_remote_id' => 
+      array (
+        'length' => 100,
+        'type' => 'varchar',
+        'not_null' => '1',
+        'default' => '',
+      ),
+      'verifier' => 
+      array (
+        'length' => 13,
+        'type' => 'char',
+        'default' => NULL,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'user_remote_id',
+        ),
+      ),
+      'access_token' => 
+      array (
+        'type' => 'unique',
+        'fields' => 
+        array (
+          0 => 'access_token',
+        ),
+      ),
+    ),
+  ),
+  '_info' => 
+  array (
+    'format' => 'generic',
+  ),
+);
+
+?>

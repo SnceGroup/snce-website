@@ -1,0 +1,4 @@
+Upgrading from 0.x to current version:
+
+1. Copy over new extension files.
+   The system will take care of the rest.

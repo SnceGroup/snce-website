@@ -1,0 +1,794 @@
+//PRIMA RIGA
+
+
+.first_row{
+//min-width:1330px;
+margin: 0 auto;
+width:100%;
+background: rgb(255,255,255); 
+
+.text_first_row{
+ margin: 0 auto;
+  margin-top:65px;
+ width:80%;
+ background: rgb(255,255,255); 
+ 
+ h2{
+
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: $text_box_font_size;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: $text_box_font_size;
+ 
+ }
+}
+.box_first_row{
+
+ max-width: 1063px; 
+ margin: 0 auto;
+ width:80%;
+ height: 280px;
+ 
+ background: rgb(255,255,255); 
+ 
+ .project{
+ float:left;
+ margin-left:20px;
+ width:20%;
+ height:20%;
+ min-width:237px;
+min-height: 216px;
+ position: relative;
+ 
+ }
+ 
+  .project img{
+  width:237px;
+  height: 216px;
+   }
+ 
+ 
+ .info_project{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+ background:black;
+height: 100%;
+width:100%;
+ color:white;
+display:none;
+
+h1{
+font-size: $text_box_font_size;
+}
+
+}
+ 
+  .project:hover .info_project {
+ display: block;
+ text-align: center;
+ background:black;
+ color:white;
+ opacity: 0.75;
+ 
+  }
+ 
+ 
+ 
+ }
+ 
+ 
+
+ 
+ .btnAllProjectDiv{
+ 
+ width:100%;
+
+ text-align:center;
+ 
+ 
+ .btnAllProject {
+
+margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+   border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+  
+ }
+ }
+  //SECONDA RIGA
+  .second_row{
+//  min-width:1330px;
+margin-top:5em;
+margin: 0 auto;
+width:100%;
+background: rgb(25,25,25); 
+
+.text_second_row{
+margin-top:65px;
+ margin: 0 auto;
+ width:80%;
+ background: rgb(25,25,25); 
+ 
+ h2{
+ 
+  text-align: center;
+   color: rgb(255, 255, 255 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: $text_box_font_size;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: $text_box_font_size;
+ 
+ }
+}
+
+.box_second_row{
+max-width: 1063px; 
+ margin: 0 auto;
+ width:80%;
+ height: 500px;
+ background: rgb(25,25,25); 
+
+.skill{
+ float:left;
+ margin-top: 20px;
+ margin-left:20px;
+ width:237px;
+ height: 216px;
+ position: relative;
+ background: rgb(25,25,25);
+ color: rgb(255,255,255);
+ text-align: center;
+ vertical-align: middle;
+ }
+ 
+ 
+  .skill img{
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width:52px;
+  height: 52px;
+   }
+   
+   .info_skill{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+background: rgb(25,25,25);
+height: 100%;
+width:100%;
+ color:white;
+display:none;
+}
+
+
+.info_skill img{
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width:35px;
+  height: 35px;
+   }
+
+
+ 
+  .skill:hover .info_skill {
+ display: block;
+ text-align: center;
+background: rgb(25,25,25);
+ color:white;
+
+ 
+  }
+ 
+}
+} 
+
+ //TERZA RIGA
+
+
+.third_row{
+//min-width:1330px;
+margin: 0 auto;
+width:100%;
+height:100%;
+background: rgb(255,255,255); 
+
+.text_third_row{
+margin-top:65px;
+ margin: 0 auto;
+ width:80%;
+ background: rgb(255,255,255); 
+ 
+ h2{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: $text_box_font_size;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: $text_box_font_size;
+ 
+ }
+}
+
+.box_third_row{
+max-width: 1063px; 
+ margin: 0 auto;
+ width:80%;
+ height: 280px;
+ 
+ background: rgb(255,255,255); 
+ 
+ .social{
+ float:left;
+ margin-left:20px;
+ margin-bottom:30px;
+// width:30%;
+// height:20%;
+background: rgb(25,25,25);
+ min-width:324px;
+min-height: 324px;
+ position: relative;
+ 
+ }
+ 
+  .social img{
+  width:237px;
+  height: 216px;
+   }
+ 
+ 
+ .info_social{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+ background:black;
+height: 100%;
+width:100%;
+ color:white;
+display:none;
+
+h1{
+font-size: $text_box_font_size;
+}
+
+}
+ 
+  .social:hover .info_social {
+ display: block;
+ text-align: center;
+ background:black;
+ color:white;
+ opacity: 0.75;
+ 
+  }
+ 
+ 
+ }
+
+
+
+ .btnAllProjectDiv{
+ margin-top:5em;
+ 
+ width:100%;
+ text-align:center;
+ 
+ 
+ .btnAllProject {
+
+margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+   border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+  
+ }
+}
+
+ //QUARTA RIGA
+
+
+.fourth_row{
+height:500px;
+margin: 0 auto;
+width:100%;
+//min-width:1330px;
+background: rgb(25,25,25);
+
+.text_fourth_row{
+margin-top:65px;
+ margin: 0 auto;
+ width:80%;
+ background: rgb(25,25,25); 
+ 
+ h2{
+  text-align: center;
+   color: rgb( 255, 255, 255 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size:$text_box_font_size;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 255, 255, 255 );
+   font-size: $text_box_font_size;
+ 
+ }
+}
+
+.box_fourth_row{
+max-width: 1063px; 
+ margin: 0 auto;
+ width:80%;
+ height: 280px;
+ 
+ background: rgb(25,25,25);
+ 
+ .clients{
+ float:left;
+ margin-left:20px;
+ margin-bottom:30px;
+// width:30%;
+// height:20%;
+background: rgb(25,25,25);
+ min-width:155px;
+min-height: 86px;
+ position: relative;
+ 
+ }
+ 
+  .clients img{
+  width:122px;
+  height: 86px;
+   }
+ 
+ 
+ .info_clients{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+ background:black;
+height: 100%;
+width:100%;
+ color:white;
+display:none;
+
+h1{
+font-size: $text_box_font_size;
+}
+
+}
+ 
+  .clients:hover .info_clients {
+ display: block;
+ text-align: center;
+ background:black;
+ color:white;
+ opacity: 0.75;
+ 
+  }
+ 
+ 
+ }
+
+
+
+ .btnAllProjectDiv{
+ 
+ width:100%;
+
+ text-align:center;
+ 
+ 
+ .btnAllProject {
+
+margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+   border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+  
+ }
+
+
+}
+
+
+
+
+/*********MEDIA QUERY *************/
+
+
+
+@media only screen and (min-width: 960px) and(max-width:1365px) {
+
+nav{
+@include column($_columns - 5);
+ margin-left: - 0.7em;
+ font: {
+	size: 0.9em;
+	weight: bold;
+	 }
+}
+.logo_img{
+margin-right:0.4em;
+}
+
+
+// PRIMA RIGA - LATEST PROJECTS //
+
+
+
+.first_row{
+
+width:100%;
+
+.text_first_row{
+margin-top: -5em;
+
+}
+
+.box_first_row{
+
+ margin: 0 auto;
+ width:550px;
+ height: 580px;
+ 
+ 
+ .project{
+ 
+ margin-top:30px;
+ }
+ 
+ 
+}
+ }
+
+// SECONDA RIGA - SKILL & EXPERTISE //
+.second_row{
+margin-top: 2em;
+width:100%;
+
+.box_second_row{
+ margin: 0 auto;
+ width:550px;
+ height: 1000px;
+}
+
+}
+
+
+// TERZA RIGA - WHAT WE?RE UP TO //
+.third_row{
+margin-top: 2em;
+width:100%;
+ //height: 800px;
+
+.box_third_row{
+ margin: 0 auto;
+ width:700px;
+ height: 700px;
+ 
+ .social{
+ text-align:center;
+ 
+ }
+}
+ .btnAllProjectDiv{
+ margin-top:3em;
+ }
+
+}
+
+	
+
+.fourth_row{
+height:100%;
+	
+	
+	.box_fourth_row{
+width: 780px;
+height:600px;
+
+}
+	
+}
+	
+.footer_div{
+
+footer{
+margin-left:5em;
+}
+}
+
+}
+
+
+
+
+
+
+
+
+//sotto i 960px
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+body{
+width:100%;
+max-width:1024px;
+}
+
+//HEADER
+
+header{
+width:100px;
+
+img{
+width: 130px;
+margin-left:-1em;
+
+}
+}
+
+nav{
+@include column($_columns - 4);
+ margin-left: - 4.5em;
+ width:435px;
+ font: {
+	size: 0.8em;
+	weight: bold;
+	 }
+}
+
+.logo_img{
+margin-right:0em;
+
+ li{
+	 text-align: right;
+	 padding: 0em;
+	 width: 1em;
+	}
+
+
+img{
+margin-right:1px;
+//padding: 0 $padding;
+height: 15px;
+width: 12px;}
+
+}
+
+.row_image{
+
+
+height: 400px;
+	
+	
+	.btnLatestProject {
+  margin-left: 0em;
+   }
+}
+#text h2{
+text-align: center;
+ font-size: 1.1em;
+}
+// PRIMA RIGA - LATEST PROJECTS //
+
+.first_row{
+
+width:100%;
+
+.text_first_row{
+margin-top: -2em;
+
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: 1.1em;
+ 
+ }
+
+
+}
+
+.box_first_row{
+
+ margin: 0 auto;
+ width:550px;
+ height: 580px;
+ 
+ 
+ .project{
+ 
+ margin-top:30px;
+ }
+ 
+ 
+}
+ }
+ 
+ // SECONDA RIGA - SKILL & EXPERTISE //
+.second_row{
+margin-top: 2em;
+width:100%;
+
+.box_second_row{
+ margin: 0 auto;
+ width:550px;
+ height: 1000px;
+}
+
+}
+ 
+ 
+// TERZA RIGA - WHAT WE?RE UP TO //
+.third_row{
+margin-top: 2em;
+width:100%;
+ //height: 800px;
+
+.box_third_row{
+ margin: 0 auto;
+ width:700px;
+ height: 700px;
+ 
+ .social{
+ text-align:center;
+ 
+ }
+}
+ .btnAllProjectDiv{
+ margin-top:3em;
+ }
+
+}
+
+//QUARTA RIGA
+.fourth_row{
+height:100%;
+	
+	
+	.box_fourth_row{
+width: 525px;
+height:700px;
+
+}
+	
+}
+
+
+.footer_div{
+width:100%;
+
+footer {
+
+width:90%;
+margin-left:0.8em;
+margin-left:2em;
+
+padding-top: 2em;
+margin: 0 auto;
+//width: 960px;
+width:100%;
+height:100%;
+margin: 0 auto;
+background: rgb(25,25,25);
+
+.box_footer_row{
+
+margin-left:0.8em;
+width:98%;
+
+.footer_element{
+ float:left;
+ margin-left:0px;
+ margin-top:15px;
+ 
+// width:30%;
+// height:20%;
+background: rgb(25,25,25);
+ width:180px;
+height: 117px;
+ position: relative;
+ font-size: 0.8em;
+color: grey;
+ 
+.footer_element h1{
+font-size: 1.15em;
+color: white;
+}
+ 
+ }
+}
+ .copy_footer_row{
+float:left;
+margin-left:0.8em;
+width:98%;
+margin-top:1em;
+
+ 
+ }
+
+
+}
+}
+
+}

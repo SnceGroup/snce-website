@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>eZ Script Monitor LS</name>
+        <version>5.2.0</version>
+        <copyright>Copyright (C) 1999-2013 eZ Systems AS</copyright>
+        <license>eZ Business Use License Agreement eZ BUL Version 2.1</license>
+        <info_url>https://github.com/ezsystems/ezscriptmonitor</info_url>
+    </metadata>
+</software>

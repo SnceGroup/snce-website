@@ -1,0 +1,318 @@
+@import "partials/constants";
+
+
+// team
+
+.text_first_row_team{
+ margin: 0 auto;
+  margin-top:65px;
+  margin-bottom:125px;
+ width:75%;
+ background: rgb(255,255,255); 
+ 
+ h2{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: $text_box_font_size;
+ 
+ }
+ 
+ img{
+ 
+ width:138px;
+ margin-right:5px;
+ 
+ }
+ 
+ 
+ p{
+  text-align: center;
+  vertical-align: middle;
+  
+   color: rgb( 0, 0, 0 );
+   font-size: 1.3em;
+   height:18px;
+ 
+ }
+  
+ }
+ 
+ 
+ .team_snce_box{
+ margin-top:5em;
+height: 1000px;
+ margin: 0 auto;
+ width:100%;
+ 
+ background: rgb(25,25,25); 
+
+
+.scroll_team{ 
+margin: 0 auto;
+height: 900px;
+ max-width: 1250px; 
+
+ .list_carousel {
+				margin: 0 0 30px 60px;
+				width: 360px;
+			}
+			.list_carousel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			.list_carousel li {
+				
+				max-width: 400px;
+			
+				height: 750px;
+				padding: 0;
+				display: block;
+				float: left;
+			}
+			.list_carousel.responsive {
+				width: auto;
+				margin-left: 0;
+			}
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			.prev {
+				float: left;
+				margin-left: 10px;
+			}
+			.next {
+				float: right;
+				margin-right: 10px;
+			}
+			.pager {
+				float: left;
+				width: 300px;
+				text-align: center;
+			}
+			.pager a {
+				margin: 0 5px;
+				text-decoration: none;
+			}
+			.pager a.selected {
+				text-decoration: underline;
+			}
+			.timer {
+				background-color: #999;
+				height: 6px;
+				width: 0px;
+			}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .arrow{
+  float:left;
+ margin-top:15em;
+  margin-left:10px;
+ //margin-bottom:30px;
+// width:30%;
+// height:20%;
+background: rgb(25,25,25);
+ max-width:21px;
+ min-width:21px;
+min-height: 350px;
+text-align: center;
+position: relative;
+ 
+
+ img{
+display: inline-block;
+vertical-align:middle;
+  
+ }
+ }
+ 
+
+ 
+ .team{
+ float:left;
+ margin-top:2em;
+ margin-left:35px;
+ //margin-bottom:30px;
+// width:30%;
+// height:20%;
+background: rgb(25,25,25);
+ max-width:350px;
+ min-width:350px;
+min-height: 350px;
+text-align: center;
+position: relative;
+
+
+
+.circle {
+width:320px;
+height:320px;
+     border-radius: 50%;
+    display: inline-block;
+}
+.circle img {
+width:320px;
+height:320px;
+    border-radius: 50%;
+    display: block;
+}
+
+.info_team{
+
+margin-top:2em;
+
+
+ h2{
+  text-align: center;
+   color: rgb( 255, 255, 255 );
+  }
+  h4{
+  text-align: center;
+   color: rgb( 255, 255, 255 );
+  }
+p{
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 40px;
+  height:80px;
+   color: grey;
+   font-size: 0.9em;
+  // height:18px;
+ 
+ }
+ 
+ img{
+ margin-top:35px;
+ margin-right:15px;
+ margin-bottom:35px;
+ height:22px;
+ width:22px;
+ 
+ }
+}
+
+}
+ 
+} 
+ 
+ }
+ 
+ .third_row_team{
+//min-width:1330px;
+margin: 0 auto;
+width:100%;
+height:100%;
+background: rgb(255,255,255); 
+
+.text_third_row{
+margin-top:120px;
+ margin: 0 auto;
+ width:80%;
+ background: rgb(255,255,255); 
+ 
+ h2{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+ 
+ }
+  h7{
+  text-align: center;
+   color:#fc0015;
+    font-size: $text_box_font_size;
+ 
+ }
+ 
+ p{
+  text-align: center;
+   color: rgb( 0, 0, 0 );
+   font-size: $text_box_font_size;
+ 
+ }
+}
+
+.box_third_row{
+ margin: 0 auto;
+ width:100%;
+ height: 400px;
+ margin-top:5em;
+ margin-bottom:5em;
+ background: rgb(225,225,225); 
+ 
+ .social{
+ float:left;
+ margin-left:20px;
+ margin-bottom:30px;
+// width:30%;
+// height:20%;
+background: rgb(25,25,25);
+ min-width:324px;
+min-height: 324px;
+ position: relative;
+ 
+ }
+ 
+  .social img{
+  width:237px;
+  height: 216px;
+   }
+ 
+ 
+ .info_social{
+ margin: 0 auto;
+position:absolute;
+top:0;
+left:0;
+font-size: 0.8em;
+ text-align: center;
+ background:black;
+height: 100%;
+width:100%;
+ color:white;
+display:none;
+
+h1{
+font-size: $text_box_font_size;
+}
+
+}
+ 
+  .social:hover .info_social {
+ display: block;
+ text-align: center;
+ background:black;
+ color:white;
+ opacity: 0.75;
+ 
+  }
+ 
+ 
+ }
+
+
+
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  

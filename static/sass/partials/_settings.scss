@@ -1,0 +1,9 @@
+@mixin first{
+@include alpha;
+
+}
+
+@mixin last{
+@include omega;
+
+}

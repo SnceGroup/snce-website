@@ -1,3 +1,8 @@
+#Generic
+.DS_Store
+thumbs.db
+/.idea/
+
 # Bootstrap
 app/bootstrap*
 
@@ -7,6 +12,23 @@ vendor/*
 */cache/*
 web/uploads/*
 web/bundles/*
+/web/js/*
+/web/css/*
+/web/.htaccess
+/.vagrant/
+/vagrant/
+/Vagrantfile
+
+#eZ legacy
+!/ezpublish_legacy/
+/ezpublish_legacy/*
+!/ezpublish_legacy/settings/
+!/ezpublish_legacy/var/
+/ezpublish_legacy/var/*
+!/ezpublish_legacy/var/ezdemo_site
+!/ezpublish_legacy/var/ezdemo_site
+/ezpublish_legacy/var/ezdemo_site/*
+!/ezpublish_legacy/var/ezdemo_site/storage
 
 # Configuration files
 app/config/parameters.ini

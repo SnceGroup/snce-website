@@ -1,0 +1,2221 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../sass/partials/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../sass/partials/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 66, ../sass/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 76, ../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, ../sass/partials/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 96, ../sass/partials/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 105, ../sass/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 118, ../sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 127, ../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 136, ../sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 144, ../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 152, ../sass/partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 162, ../sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 174, ../sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 183, ../sass/partials/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 191, ../sass/partials/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 199, ../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 208, ../sass/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 215, ../sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 219, ../sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 231, ../sass/partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 239, ../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 251, ../sass/partials/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 263, ../sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 274, ../sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 288, ../sass/partials/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 300, ../sass/partials/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 312, ../sass/partials/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 327, ../sass/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 337, ../sass/partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 347, ../sass/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, ../sass/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 371, ../sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 380, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 390, ../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 403, ../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../sass/partials/_header.scss */
+.title {
+  position: fixed;
+  z-index: 2;
+  margin: 0 auto;
+  width: 100%;
+  background: #f0f0f0;
+  background: rgba(240, 240, 240, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000);
+  zoom: 1;
+}
+
+/* line 23, ../sass/partials/_header.scss */
+header {
+  max-width: 83em;
+  padding-top: 2em;
+  margin-left: 2em;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 30, ../sass/partials/_header.scss */
+header h1 {
+  margin-top: -0.15em;
+}
+/* line 34, ../sass/partials/_header.scss */
+header #logo {
+  margin-left: 2em;
+  width: 181px;
+}
+/* line 45, ../sass/partials/_header.scss */
+header h6 {
+  margin: 0 auto;
+  color: black;
+}
+/* line 50, ../sass/partials/_header.scss */
+header h1, header h6 {
+  margin-top: -0.15em;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 68px;
+}
+
+/* line 56, ../sass/partials/_header.scss */
+nav {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 684px;
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 64, ../sass/partials/_header.scss */
+nav point {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5em;
+}
+/* line 72, ../sass/partials/_header.scss */
+nav a {
+  text-decoration: none;
+  color: black;
+}
+/* line 75, ../sass/partials/_header.scss */
+nav a:hover {
+  color: red;
+}
+/* line 79, ../sass/partials/_header.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  float: right;
+  padding: 0 1em;
+}
+/* line 42, ../sass/partials/_blankwork.scss */
+nav ul:before, nav ul:after {
+  content: "";
+  display: table;
+}
+/* line 48, ../sass/partials/_blankwork.scss */
+nav ul:after {
+  clear: both;
+}
+/* line 60, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li:first-child, nav ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li.last {
+  padding-right: 0;
+}
+/* line 85, ../sass/partials/_header.scss */
+nav li {
+  text-align: right;
+  margin-right: 1em;
+}
+
+/* line 93, ../sass/partials/_header.scss */
+.logo_img {
+  margin-right: 2em;
+}
+/* line 96, ../sass/partials/_header.scss */
+.logo_img ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  float: right;
+  padding: 0 1em;
+}
+/* line 42, ../sass/partials/_blankwork.scss */
+.logo_img ul:before, .logo_img ul:after {
+  content: "";
+  display: table;
+}
+/* line 48, ../sass/partials/_blankwork.scss */
+.logo_img ul:after {
+  clear: both;
+}
+/* line 60, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li:first-child, .logo_img ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li.last {
+  padding-right: 0;
+}
+/* line 102, ../sass/partials/_header.scss */
+.logo_img li {
+  text-align: right;
+  padding: 0em;
+  width: 2em;
+}
+/* line 110, ../sass/partials/_header.scss */
+.logo_img img {
+  margin-right: 3px;
+  padding: 0 1em;
+}
+
+/* line 117, ../sass/partials/_header.scss */
+.row_image {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  height: 551px;
+  margin-right: auto;
+  position: relative;
+}
+/* line 127, ../sass/partials/_header.scss */
+.row_image #image {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 135, ../sass/partials/_header.scss */
+.row_image #text {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  color: white;
+  line-height: 1.169;
+}
+/* line 144, ../sass/partials/_header.scss */
+.row_image #text h2 {
+  text-align: center;
+}
+/* line 149, ../sass/partials/_header.scss */
+.row_image #text hr {
+  margin: 0 auto;
+  margin-top: 0.43em;
+  width: 100%;
+  color: white;
+}
+/* line 157, ../sass/partials/_header.scss */
+.row_image .btnLatestProject {
+  margin-left: 2em;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 169, ../sass/partials/_header.scss */
+.row_image .btnLatestProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/* line 5, ../sass/partials/_footer.scss */
+.footer_div {
+  width: 100%;
+  min-height: 275px;
+  margin: 0 auto;
+  background: #191919;
+}
+
+/* line 13, ../sass/partials/_footer.scss */
+footer {
+  padding-top: 2em;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  background: #191919;
+}
+/* line 21, ../sass/partials/_footer.scss */
+footer h1 {
+  margin-top: -0.15em;
+}
+/* line 30, ../sass/partials/_footer.scss */
+footer .box_footer_row {
+  margin: 0 auto;
+  width: 100%;
+  height: 120px;
+  background: #191919;
+}
+/* line 39, ../sass/partials/_footer.scss */
+footer .box_footer_row .footer_element {
+  float: left;
+  margin-left: 6px;
+  margin-top: 15px;
+  background: #191919;
+  width: 230px;
+  height: 117px;
+  position: relative;
+  font-size: 0.8em;
+  color: grey;
+}
+/* line 53, ../sass/partials/_footer.scss */
+footer .box_footer_row .footer_element h1 {
+  font-size: 1.3em;
+  color: white;
+}
+/* line 59, ../sass/partials/_footer.scss */
+footer .box_footer_row .footer_element .newsletter {
+  background-color: #303030;
+  border: 0px solid;
+  color: grey;
+  height: 20px;
+  width: 130px;
+  font-style: normal;
+  padding: 1px;
+}
+/* line 70, ../sass/partials/_footer.scss */
+footer .box_footer_row .footer_element .ok_newsletter {
+  margin-left: 2px;
+  background-color: #303030;
+  border: 0px solid;
+  color: grey;
+  height: 20px;
+  width: 20px;
+  font-style: normal;
+  padding: 1px;
+}
+/* line 87, ../sass/partials/_footer.scss */
+footer .copy_footer_row {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 0.6em;
+  color: grey;
+  background: #191919;
+}
+
+/* line 42, spr/*.png */
+.spr-sprite {
+  background: url('/images/spr-s75645ece41.png') no-repeat;
+}
+
+/* line 4, ../sass/partials/_homepage.scss */
+.first_row {
+  margin: 0 auto;
+  width: 100%;
+  background: white;
+}
+/* line 10, ../sass/partials/_homepage.scss */
+.first_row .text_first_row {
+  margin: 0 auto;
+  margin-top: 65px;
+  width: 80%;
+  background: white;
+}
+/* line 16, ../sass/partials/_homepage.scss */
+.first_row .text_first_row h2 {
+  text-align: center;
+  color: black;
+}
+/* line 22, ../sass/partials/_homepage.scss */
+.first_row .text_first_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 29, ../sass/partials/_homepage.scss */
+.first_row .text_first_row p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 36, ../sass/partials/_homepage.scss */
+.first_row .box_first_row {
+  max-width: 1063px;
+  margin: 0 auto;
+  width: 80%;
+  height: 280px;
+  background: white;
+}
+/* line 45, ../sass/partials/_homepage.scss */
+.first_row .box_first_row .project {
+  float: left;
+  margin-left: 20px;
+  width: 20%;
+  height: 20%;
+  min-width: 237px;
+  min-height: 216px;
+  position: relative;
+}
+/* line 56, ../sass/partials/_homepage.scss */
+.first_row .box_first_row .project img {
+  width: 237px;
+  height: 216px;
+}
+/* line 62, ../sass/partials/_homepage.scss */
+.first_row .box_first_row .info_project {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 75, ../sass/partials/_homepage.scss */
+.first_row .box_first_row .info_project h1 {
+  font-size: 1.5em;
+}
+/* line 81, ../sass/partials/_homepage.scss */
+.first_row .box_first_row .project:hover .info_project {
+  display: block;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.75;
+}
+/* line 97, ../sass/partials/_homepage.scss */
+.first_row .btnAllProjectDiv {
+  width: 100%;
+  text-align: center;
+}
+/* line 104, ../sass/partials/_homepage.scss */
+.first_row .btnAllProjectDiv .btnAllProject {
+  margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 116, ../sass/partials/_homepage.scss */
+.first_row .btnAllProjectDiv .btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/* line 124, ../sass/partials/_homepage.scss */
+.second_row {
+  margin-top: 5em;
+  margin: 0 auto;
+  width: 100%;
+  background: #191919;
+}
+/* line 131, ../sass/partials/_homepage.scss */
+.second_row .text_second_row {
+  margin-top: 65px;
+  margin: 0 auto;
+  width: 80%;
+  background: #191919;
+}
+/* line 137, ../sass/partials/_homepage.scss */
+.second_row .text_second_row h2 {
+  text-align: center;
+  color: white;
+}
+/* line 143, ../sass/partials/_homepage.scss */
+.second_row .text_second_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 150, ../sass/partials/_homepage.scss */
+.second_row .text_second_row p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 158, ../sass/partials/_homepage.scss */
+.second_row .box_second_row {
+  max-width: 1063px;
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  background: #191919;
+}
+/* line 165, ../sass/partials/_homepage.scss */
+.second_row .box_second_row .skill {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 237px;
+  height: 216px;
+  position: relative;
+  background: #191919;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 179, ../sass/partials/_homepage.scss */
+.second_row .box_second_row .skill img {
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width: 52px;
+  height: 52px;
+}
+/* line 188, ../sass/partials/_homepage.scss */
+.second_row .box_second_row .info_skill {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: #191919;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 203, ../sass/partials/_homepage.scss */
+.second_row .box_second_row .info_skill img {
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+}
+/* line 214, ../sass/partials/_homepage.scss */
+.second_row .box_second_row .skill:hover .info_skill {
+  display: block;
+  text-align: center;
+  background: #191919;
+  color: white;
+}
+
+/* line 229, ../sass/partials/_homepage.scss */
+.third_row {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+/* line 236, ../sass/partials/_homepage.scss */
+.third_row .text_third_row {
+  margin-top: 65px;
+  margin: 0 auto;
+  width: 80%;
+  background: white;
+}
+/* line 242, ../sass/partials/_homepage.scss */
+.third_row .text_third_row h2 {
+  text-align: center;
+  color: black;
+}
+/* line 247, ../sass/partials/_homepage.scss */
+.third_row .text_third_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 254, ../sass/partials/_homepage.scss */
+.third_row .text_third_row p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 262, ../sass/partials/_homepage.scss */
+.third_row .box_third_row {
+  max-width: 1063px;
+  margin: 0 auto;
+  width: 80%;
+  height: 280px;
+  background: white;
+}
+/* line 270, ../sass/partials/_homepage.scss */
+.third_row .box_third_row .social {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background: #191919;
+  min-width: 324px;
+  min-height: 324px;
+  position: relative;
+}
+/* line 283, ../sass/partials/_homepage.scss */
+.third_row .box_third_row .social img {
+  width: 237px;
+  height: 216px;
+}
+/* line 289, ../sass/partials/_homepage.scss */
+.third_row .box_third_row .info_social {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 302, ../sass/partials/_homepage.scss */
+.third_row .box_third_row .info_social h1 {
+  font-size: 1.5em;
+}
+/* line 308, ../sass/partials/_homepage.scss */
+.third_row .box_third_row .social:hover .info_social {
+  display: block;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.75;
+}
+/* line 322, ../sass/partials/_homepage.scss */
+.third_row .btnAllProjectDiv {
+  margin-top: 5em;
+  width: 100%;
+  text-align: center;
+}
+/* line 329, ../sass/partials/_homepage.scss */
+.third_row .btnAllProjectDiv .btnAllProject {
+  margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 341, ../sass/partials/_homepage.scss */
+.third_row .btnAllProjectDiv .btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/* line 352, ../sass/partials/_homepage.scss */
+.fourth_row {
+  height: 500px;
+  margin: 0 auto;
+  width: 100%;
+  background: #191919;
+}
+/* line 359, ../sass/partials/_homepage.scss */
+.fourth_row .text_fourth_row {
+  margin-top: 65px;
+  margin: 0 auto;
+  width: 80%;
+  background: #191919;
+}
+/* line 365, ../sass/partials/_homepage.scss */
+.fourth_row .text_fourth_row h2 {
+  text-align: center;
+  color: white;
+}
+/* line 370, ../sass/partials/_homepage.scss */
+.fourth_row .text_fourth_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 377, ../sass/partials/_homepage.scss */
+.fourth_row .text_fourth_row p {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+/* line 385, ../sass/partials/_homepage.scss */
+.fourth_row .box_fourth_row {
+  max-width: 1063px;
+  margin: 0 auto;
+  width: 80%;
+  height: 280px;
+  background: #191919;
+}
+/* line 393, ../sass/partials/_homepage.scss */
+.fourth_row .box_fourth_row .clients {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background: #191919;
+  min-width: 155px;
+  min-height: 86px;
+  position: relative;
+}
+/* line 406, ../sass/partials/_homepage.scss */
+.fourth_row .box_fourth_row .clients img {
+  width: 122px;
+  height: 86px;
+}
+/* line 412, ../sass/partials/_homepage.scss */
+.fourth_row .box_fourth_row .info_clients {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 425, ../sass/partials/_homepage.scss */
+.fourth_row .box_fourth_row .info_clients h1 {
+  font-size: 1.5em;
+}
+/* line 431, ../sass/partials/_homepage.scss */
+.fourth_row .box_fourth_row .clients:hover .info_clients {
+  display: block;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.75;
+}
+/* line 445, ../sass/partials/_homepage.scss */
+.fourth_row .btnAllProjectDiv {
+  width: 100%;
+  text-align: center;
+}
+/* line 452, ../sass/partials/_homepage.scss */
+.fourth_row .btnAllProjectDiv .btnAllProject {
+  margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 464, ../sass/partials/_homepage.scss */
+.fourth_row .btnAllProjectDiv .btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/*********MEDIA QUERY *************/
+@media only screen and (min-width: 960px) and (max-width: 1365px) {
+  /* line 483, ../sass/partials/_homepage.scss */
+  nav {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 596px;
+    margin-left: -0.7em;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  /* line 491, ../sass/partials/_homepage.scss */
+  .logo_img {
+    margin-right: 0.4em;
+  }
+
+  /* line 500, ../sass/partials/_homepage.scss */
+  .first_row {
+    width: 100%;
+  }
+  /* line 504, ../sass/partials/_homepage.scss */
+  .first_row .text_first_row {
+    margin-top: -5em;
+  }
+  /* line 509, ../sass/partials/_homepage.scss */
+  .first_row .box_first_row {
+    margin: 0 auto;
+    width: 550px;
+    height: 580px;
+  }
+  /* line 516, ../sass/partials/_homepage.scss */
+  .first_row .box_first_row .project {
+    margin-top: 30px;
+  }
+
+  /* line 526, ../sass/partials/_homepage.scss */
+  .second_row {
+    margin-top: 2em;
+    width: 100%;
+  }
+  /* line 530, ../sass/partials/_homepage.scss */
+  .second_row .box_second_row {
+    margin: 0 auto;
+    width: 550px;
+    height: 1000px;
+  }
+
+  /* line 540, ../sass/partials/_homepage.scss */
+  .third_row {
+    margin-top: 2em;
+    width: 100%;
+  }
+  /* line 545, ../sass/partials/_homepage.scss */
+  .third_row .box_third_row {
+    margin: 0 auto;
+    width: 700px;
+    height: 700px;
+  }
+  /* line 550, ../sass/partials/_homepage.scss */
+  .third_row .box_third_row .social {
+    text-align: center;
+  }
+  /* line 555, ../sass/partials/_homepage.scss */
+  .third_row .btnAllProjectDiv {
+    margin-top: 3em;
+  }
+
+  /* line 563, ../sass/partials/_homepage.scss */
+  .fourth_row {
+    height: 100%;
+  }
+  /* line 567, ../sass/partials/_homepage.scss */
+  .fourth_row .box_fourth_row {
+    width: 780px;
+    height: 600px;
+  }
+
+  /* line 577, ../sass/partials/_homepage.scss */
+  .footer_div footer {
+    margin-left: 5em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 594, ../sass/partials/_homepage.scss */
+  body {
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  /* line 601, ../sass/partials/_homepage.scss */
+  header {
+    width: 100px;
+  }
+  /* line 604, ../sass/partials/_homepage.scss */
+  header img {
+    width: 130px;
+    margin-left: -1em;
+  }
+
+  /* line 611, ../sass/partials/_homepage.scss */
+  nav {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 684px;
+    margin-left: -4.5em;
+    width: 435px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  /* line 621, ../sass/partials/_homepage.scss */
+  .logo_img {
+    margin-right: 0em;
+  }
+  /* line 624, ../sass/partials/_homepage.scss */
+  .logo_img li {
+    text-align: right;
+    padding: 0em;
+    width: 1em;
+  }
+  /* line 631, ../sass/partials/_homepage.scss */
+  .logo_img img {
+    margin-right: 1px;
+    height: 15px;
+    width: 12px;
+  }
+
+  /* line 639, ../sass/partials/_homepage.scss */
+  .row_image {
+    height: 400px;
+  }
+  /* line 645, ../sass/partials/_homepage.scss */
+  .row_image .btnLatestProject {
+    margin-left: 0em;
+  }
+
+  /* line 649, ../sass/partials/_homepage.scss */
+  #text h2 {
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  /* line 655, ../sass/partials/_homepage.scss */
+  .first_row {
+    width: 100%;
+  }
+  /* line 659, ../sass/partials/_homepage.scss */
+  .first_row .text_first_row {
+    margin-top: -2em;
+  }
+  /* line 662, ../sass/partials/_homepage.scss */
+  .first_row .text_first_row p {
+    text-align: center;
+    color: black;
+    font-size: 1.1em;
+  }
+  /* line 672, ../sass/partials/_homepage.scss */
+  .first_row .box_first_row {
+    margin: 0 auto;
+    width: 550px;
+    height: 580px;
+  }
+  /* line 679, ../sass/partials/_homepage.scss */
+  .first_row .box_first_row .project {
+    margin-top: 30px;
+  }
+
+  /* line 689, ../sass/partials/_homepage.scss */
+  .second_row {
+    margin-top: 2em;
+    width: 100%;
+  }
+  /* line 693, ../sass/partials/_homepage.scss */
+  .second_row .box_second_row {
+    margin: 0 auto;
+    width: 550px;
+    height: 1000px;
+  }
+
+  /* line 703, ../sass/partials/_homepage.scss */
+  .third_row {
+    margin-top: 2em;
+    width: 100%;
+  }
+  /* line 708, ../sass/partials/_homepage.scss */
+  .third_row .box_third_row {
+    margin: 0 auto;
+    width: 700px;
+    height: 700px;
+  }
+  /* line 713, ../sass/partials/_homepage.scss */
+  .third_row .box_third_row .social {
+    text-align: center;
+  }
+  /* line 718, ../sass/partials/_homepage.scss */
+  .third_row .btnAllProjectDiv {
+    margin-top: 3em;
+  }
+
+  /* line 725, ../sass/partials/_homepage.scss */
+  .fourth_row {
+    height: 100%;
+  }
+  /* line 729, ../sass/partials/_homepage.scss */
+  .fourth_row .box_fourth_row {
+    width: 525px;
+    height: 700px;
+  }
+
+  /* line 738, ../sass/partials/_homepage.scss */
+  .footer_div {
+    width: 100%;
+  }
+  /* line 741, ../sass/partials/_homepage.scss */
+  .footer_div footer {
+    width: 90%;
+    margin-left: 0.8em;
+    margin-left: 2em;
+    padding-top: 2em;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #191919;
+  }
+  /* line 755, ../sass/partials/_homepage.scss */
+  .footer_div footer .box_footer_row {
+    margin-left: 0.8em;
+    width: 98%;
+  }
+  /* line 760, ../sass/partials/_homepage.scss */
+  .footer_div footer .box_footer_row .footer_element {
+    float: left;
+    margin-left: 0px;
+    margin-top: 15px;
+    background: #191919;
+    width: 180px;
+    height: 117px;
+    position: relative;
+    font-size: 0.8em;
+    color: grey;
+  }
+  /* line 774, ../sass/partials/_homepage.scss */
+  .footer_div footer .box_footer_row .footer_element .footer_element h1 {
+    font-size: 1.15em;
+    color: white;
+  }
+  /* line 781, ../sass/partials/_homepage.scss */
+  .footer_div footer .copy_footer_row {
+    float: left;
+    margin-left: 0.8em;
+    width: 98%;
+    margin-top: 1em;
+  }
+}
+/* line 6, ../sass/partials/_projects.scss */
+.text_first_row_all_projects {
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-bottom: 125px;
+  width: 75%;
+  background: white;
+}
+/* line 13, ../sass/partials/_projects.scss */
+.text_first_row_all_projects h2 {
+  text-align: center;
+  color: black;
+}
+/* line 19, ../sass/partials/_projects.scss */
+.text_first_row_all_projects h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 26, ../sass/partials/_projects.scss */
+.text_first_row_all_projects p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 33, ../sass/partials/_projects.scss */
+.text_first_row_all_projects .radio_button {
+  margin-right: 2em;
+  margin-top: 1.5em;
+  float: right;
+}
+/* line 39, ../sass/partials/_projects.scss */
+.text_first_row_all_projects .radio_button input[type='radio'] {
+  padding: 2px 0 0px 24px;
+  border-color: red;
+}
+/* line 46, ../sass/partials/_projects.scss */
+.text_first_row_all_projects .radio_button input[type='radio']:checked {
+  padding: 2px 0 0px 24px;
+  border-color: red;
+}
+/* line 53, ../sass/partials/_projects.scss */
+.text_first_row_all_projects .radio_button label {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+/* line 60, ../sass/partials/_projects.scss */
+.text_first_row_all_projects .radio_button p {
+  color: black;
+  font-size: 1.1em;
+}
+
+/* line 72, ../sass/partials/_projects.scss */
+.box_first_row_all_projects {
+  max-width: 1063px;
+  margin-top: 10em;
+  margin: 0 auto;
+  width: 80%;
+  height: 1300px;
+  background: white;
+}
+/* line 82, ../sass/partials/_projects.scss */
+.box_first_row_all_projects .project {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 20%;
+  min-width: 237px;
+  height: 216px;
+  position: relative;
+}
+/* line 94, ../sass/partials/_projects.scss */
+.box_first_row_all_projects .project img {
+  width: 237px;
+  height: 216px;
+}
+/* line 100, ../sass/partials/_projects.scss */
+.box_first_row_all_projects .info_project {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: black;
+  height: 216px;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 113, ../sass/partials/_projects.scss */
+.box_first_row_all_projects .info_project h1 {
+  font-size: 1.5em;
+}
+/* line 119, ../sass/partials/_projects.scss */
+.box_first_row_all_projects .project:hover .info_project {
+  display: block;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.75;
+}
+
+/* line 129, ../sass/partials/_projects.scss */
+.btnAllProjectDiv {
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 5em;
+}
+/* line 137, ../sass/partials/_projects.scss */
+.btnAllProjectDiv p {
+  margin-bottom: 2.5em;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 146, ../sass/partials/_projects.scss */
+.btnAllProjectDiv .btnAllProject {
+  margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 157, ../sass/partials/_projects.scss */
+.btnAllProjectDiv .btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/*********MEDIA QUERY ALL PROJECTS *************/
+@media only screen and (min-width: 960px) and (max-width: 1365px) {
+  /* line 171, ../sass/partials/_projects.scss */
+  .row_image_internal {
+    height: 275px;
+  }
+
+  /* line 178, ../sass/partials/_projects.scss */
+  .text_first_row_all_projects {
+    margin-top: 2em;
+  }
+  /* line 180, ../sass/partials/_projects.scss */
+  .text_first_row_all_projects p {
+    font-size: 1.35em;
+  }
+
+  /* line 185, ../sass/partials/_projects.scss */
+  .box_first_row_all_projects {
+    height: 2350px;
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 195, ../sass/partials/_projects.scss */
+  .row_image_internal {
+    height: 225px;
+  }
+
+  /* line 201, ../sass/partials/_projects.scss */
+  .text_first_row_all_projects {
+    margin-top: 2em;
+  }
+  /* line 203, ../sass/partials/_projects.scss */
+  .text_first_row_all_projects p {
+    font-size: 1.25em;
+  }
+
+  /* line 208, ../sass/partials/_projects.scss */
+  .box_first_row_all_projects {
+    height: 2350px;
+    width: 550px;
+  }
+}
+/* line 6, ../sass/partials/_expertise.scss */
+.box_expertise_first_row {
+  max-width: 1063px;
+  margin: 0 auto;
+  width: 80%;
+  height: 330px;
+  margin-top: 3em;
+  background: white;
+}
+/* line 14, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .exp {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background: white;
+  width: 324px;
+  height: 324px;
+  text-align: center;
+  position: relative;
+}
+/* line 28, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .exp h2 {
+  text-align: center;
+  color: black;
+  font-size: 1,25em;
+}
+/* line 34, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .exp h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 40, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .exp p {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 0.9em;
+}
+/* line 51, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .exp img .info_exp img {
+  margin: 0 auto;
+}
+/* line 56, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .info_exp {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: #191919;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 69, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .info_exp h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+/* line 75, ../sass/partials/_expertise.scss */
+.box_expertise_first_row .info_exp h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+
+/* line 86, ../sass/partials/_expertise.scss */
+.fourth_row_expertise {
+  height: 900px;
+  margin: 0 auto;
+  width: 100%;
+  background: #191919;
+}
+/* line 93, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .text_fourth_row {
+  margin-top: 65px;
+  margin: 0 auto;
+  width: 80%;
+  background: #191919;
+}
+/* line 99, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .text_fourth_row h2 {
+  text-align: center;
+  color: white;
+}
+/* line 104, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .text_fourth_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 111, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .text_fourth_row p {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+/* line 119, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics {
+  max-width: 1063px;
+  margin: 0 auto;
+  width: 80%;
+  height: 330px;
+  margin-top: 3em;
+  background: #191919;
+}
+/* line 128, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .graphics {
+  width: 50%;
+  margin: 0 auto;
+  height: 330px;
+  margin-bottom: 3em;
+  background: #191919;
+}
+/* line 135, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .graphics canvas {
+  margin: 0 auto;
+}
+/* line 145, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics {
+  max-width: 980px;
+  margin: 0 auto;
+  height: 330px;
+  background: #191919;
+}
+/* line 150, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics .info {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background: white;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  text-align: center;
+  position: relative;
+}
+/* line 163, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics .info .info_text {
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 65%;
+  height: 280px;
+  background: white;
+  max-width: 300px;
+  position: relative;
+}
+/* line 174, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics .info .info_text h3 {
+  text-align: left;
+  height: 15px;
+  margin-left: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+/* line 183, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics .info .info_text hr {
+  margin-left: 5px;
+  width: 100%;
+  color: black;
+}
+/* line 190, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics .info .info_text h2 {
+  height: 20px;
+  text-align: left;
+  margin-left: 5px;
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+}
+/* line 199, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics .info .info_text p {
+  text-align: left;
+  margin-left: 5px;
+  font-size: 1em;
+  color: black;
+}
+/* line 208, ../sass/partials/_expertise.scss */
+.fourth_row_expertise .box_fourth_row_graphics .info_graphics .info .info_text h6 {
+  height: 10px;
+  text-align: left;
+  margin-left: 5px;
+  font-size: 1.1em;
+  color: black;
+}
+
+/* line 229, ../sass/partials/_expertise.scss */
+.btnContactDiv {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+/* line 235, ../sass/partials/_expertise.scss */
+.btnContactDiv p {
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 246, ../sass/partials/_expertise.scss */
+.btnContactDiv .btnContact {
+  margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 258, ../sass/partials/_expertise.scss */
+.btnContactDiv .btnContact:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/*********MEDIA QUERY *************/
+@media only screen and (min-width: 960px) and (max-width: 1365px) {
+  /* line 273, ../sass/partials/_expertise.scss */
+  .box_expertise_first_row {
+    width: 90%;
+  }
+  /* line 280, ../sass/partials/_expertise.scss */
+  .box_expertise_first_row .exp {
+    margin-left: 10px;
+    width: 280px;
+    height: 300px;
+  }
+  /* line 285, ../sass/partials/_expertise.scss */
+  .box_expertise_first_row .exp p {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+/* line 6, ../sass/partials/_team.scss */
+.text_first_row_team {
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-bottom: 125px;
+  width: 75%;
+  background: white;
+}
+/* line 13, ../sass/partials/_team.scss */
+.text_first_row_team h2 {
+  text-align: center;
+  color: black;
+}
+/* line 18, ../sass/partials/_team.scss */
+.text_first_row_team h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 25, ../sass/partials/_team.scss */
+.text_first_row_team img {
+  width: 138px;
+  margin-right: 5px;
+}
+/* line 33, ../sass/partials/_team.scss */
+.text_first_row_team p {
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  font-size: 1.3em;
+  height: 18px;
+}
+
+/* line 46, ../sass/partials/_team.scss */
+.team_snce_box {
+  margin-top: 5em;
+  height: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  background: #191919;
+}
+/* line 55, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team {
+  margin: 0 auto;
+  height: 900px;
+  max-width: 1250px;
+}
+/* line 60, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .list_carousel {
+  margin: 0 0 30px 60px;
+  width: 360px;
+}
+/* line 64, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .list_carousel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+/* line 70, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .list_carousel li {
+  max-width: 400px;
+  height: 750px;
+  padding: 0;
+  display: block;
+  float: left;
+}
+/* line 79, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .list_carousel.responsive {
+  width: auto;
+  margin-left: 0;
+}
+/* line 83, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .clearfix {
+  float: none;
+  clear: both;
+}
+/* line 87, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .prev {
+  float: left;
+  margin-left: 10px;
+}
+/* line 91, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .next {
+  float: right;
+  margin-right: 10px;
+}
+/* line 95, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .pager {
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+/* line 100, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .pager a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+/* line 104, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .pager a.selected {
+  text-decoration: underline;
+}
+/* line 107, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .timer {
+  background-color: #999;
+  height: 6px;
+  width: 0px;
+}
+/* line 121, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .arrow {
+  float: left;
+  margin-top: 15em;
+  margin-left: 10px;
+  background: #191919;
+  max-width: 21px;
+  min-width: 21px;
+  min-height: 350px;
+  text-align: center;
+  position: relative;
+}
+/* line 136, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .arrow img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 145, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team {
+  float: left;
+  margin-top: 2em;
+  margin-left: 35px;
+  background: #191919;
+  max-width: 350px;
+  min-width: 350px;
+  min-height: 350px;
+  text-align: center;
+  position: relative;
+}
+/* line 161, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team .circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* line 167, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team .circle img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: block;
+}
+/* line 174, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team .info_team {
+  margin-top: 2em;
+}
+/* line 179, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team .info_team h2 {
+  text-align: center;
+  color: white;
+}
+/* line 183, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team .info_team h4 {
+  text-align: center;
+  color: white;
+}
+/* line 187, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team .info_team p {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 40px;
+  height: 80px;
+  color: grey;
+  font-size: 0.9em;
+}
+/* line 198, ../sass/partials/_team.scss */
+.team_snce_box .scroll_team .team .info_team img {
+  margin-top: 35px;
+  margin-right: 15px;
+  margin-bottom: 35px;
+  height: 22px;
+  width: 22px;
+}
+
+/* line 214, ../sass/partials/_team.scss */
+.third_row_team {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+/* line 221, ../sass/partials/_team.scss */
+.third_row_team .text_third_row {
+  margin-top: 120px;
+  margin: 0 auto;
+  width: 80%;
+  background: white;
+}
+/* line 227, ../sass/partials/_team.scss */
+.third_row_team .text_third_row h2 {
+  text-align: center;
+  color: black;
+}
+/* line 232, ../sass/partials/_team.scss */
+.third_row_team .text_third_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 239, ../sass/partials/_team.scss */
+.third_row_team .text_third_row p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 247, ../sass/partials/_team.scss */
+.third_row_team .box_third_row {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  background: #e1e1e1;
+}
+/* line 255, ../sass/partials/_team.scss */
+.third_row_team .box_third_row .social {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  background: #191919;
+  min-width: 324px;
+  min-height: 324px;
+  position: relative;
+}
+/* line 268, ../sass/partials/_team.scss */
+.third_row_team .box_third_row .social img {
+  width: 237px;
+  height: 216px;
+}
+/* line 274, ../sass/partials/_team.scss */
+.third_row_team .box_third_row .info_social {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 287, ../sass/partials/_team.scss */
+.third_row_team .box_third_row .info_social h1 {
+  font-size: 1.5em;
+}
+/* line 293, ../sass/partials/_team.scss */
+.third_row_team .box_third_row .social:hover .info_social {
+  display: block;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.75;
+}
+
+/* line 8, ../sass/partials/_follow.scss */
+.first_row_follow {
+  margin: 0 auto;
+  margin-top: 6em;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+/* line 17, ../sass/partials/_follow.scss */
+.first_row_follow .box_first_row {
+  max-width: 1063px;
+  margin: 0 auto;
+  width: 80%;
+  height: 800px;
+  background: white;
+}
+/* line 25, ../sass/partials/_follow.scss */
+.first_row_follow .box_first_row .social {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  background: #191919;
+  min-width: 324px;
+  min-height: 324px;
+  position: relative;
+}
+/* line 38, ../sass/partials/_follow.scss */
+.first_row_follow .box_first_row .social img {
+  width: 237px;
+  height: 216px;
+}
+/* line 44, ../sass/partials/_follow.scss */
+.first_row_follow .box_first_row .info_social {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 57, ../sass/partials/_follow.scss */
+.first_row_follow .box_first_row .info_social h1 {
+  font-size: 1.5em;
+}
+/* line 63, ../sass/partials/_follow.scss */
+.first_row_follow .box_first_row .social:hover .info_social {
+  display: block;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.75;
+}
+
+/* line 78, ../sass/partials/_follow.scss */
+.second_row_follow {
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 100%;
+  height: 600px;
+  background: white;
+}
+/* line 87, ../sass/partials/_follow.scss */
+.second_row_follow .box_second_row_maps {
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  background: white;
+}
+/* line 97, ../sass/partials/_follow.scss */
+.second_row_follow .box_second_row_maps .infowindow {
+  font-size: 24px;
+  width: 1000px;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 109, ../sass/partials/_follow.scss */
+.third_row_follow {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+}
+
+/* line 19, ../sass/screen.scss */
+body {
+  margin: 0 auto;
+  color: #8d8f92;
+  font-size: 1em;
+  line-height: 1, 4em;
+}
+
+/* line 27, ../sass/screen.scss */
+a {
+  color: #e95e4c;
+}
+/* line 29, ../sass/screen.scss */
+a.hover {
+  color: #e74e3a;
+}
+
+/* line 36, ../sass/screen.scss */
+.row_image_internal {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  height: 325px;
+  margin-right: auto;
+  position: relative;
+}
+/* line 46, ../sass/screen.scss */
+.row_image_internal #image {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 53, ../sass/screen.scss */
+.row_image_internal #text {
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  color: white;
+  line-height: 1.169;
+}
+/* line 62, ../sass/screen.scss */
+.row_image_internal #text h2 {
+  text-align: center;
+}
+/* line 67, ../sass/screen.scss */
+.row_image_internal #text hr {
+  margin: 0 auto;
+  margin-top: 0.43em;
+  width: 100%;
+  color: white;
+}
+
+/* line 76, ../sass/screen.scss */
+.popup a {
+  color: #fe4a5d;
+  text-decoration: none;
+}
+
+/* line 78, ../sass/screen.scss */
+.popup {
+  color: #191919;
+}
+
+/* line 84, ../sass/screen.scss */
+point {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5em;
+}

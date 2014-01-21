@@ -1,0 +1,187 @@
+@import "partials/constants";
+
+//HEADER
+
+
+.title{
+//max-width:$site_width;
+position: fixed;
+z-index: 2;
+margin: 0 auto;
+width:100%;
+
+background: rgb(240,240,240);
+background: rgba(240,240,240,0.8); 
+ 
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000); 
+       zoom: 1;
+//opacity: 0.8;
+ } 
+
+
+
+header {
+max-width:$site_width;
+padding-top: 2em;
+margin-left:2em;
+width: 100%;
+margin: 0 auto;
+
+h1 {
+margin-top:-0.15em;
+}
+
+#logo{
+margin-left:2em;
+width: 181px;
+
+}
+
+img{
+
+}
+
+
+h6 {
+	margin:0 auto;
+	color:  rgb(0,0,0);
+}
+
+	h1,h6{
+	margin-top:-0.15em;
+		@include column(1);
+	}
+	
+	}
+	nav{
+	
+ @include column($_columns - 4);
+ font: {
+	size: 1em;
+	weight: bold;
+	 }
+	 
+	 point{
+	  text-decoration: none;
+	  color: red;
+	  font-size: 1.5em;
+	 
+	 }
+	 
+	 
+	 a{
+	 text-decoration: none;
+	 color: darken(rgb(0,0,0), 25%);
+	 &:hover{
+	 color: $emColor;
+	 }
+	 }
+	 ul{
+	 @include horizontal-list;
+	 
+	 float:right;
+	 padding: 0 $padding;
+	 }
+	 li{
+	 text-align: right;
+	 margin-right: $padding;
+	 
+	 
+	 }
+}
+
+.logo_img{
+margin-right:2em;
+
+ ul{
+	 @include horizontal-list;
+	 float:right;
+	 padding: 0 $padding ;
+	
+	 }
+	 li{
+	 text-align: right;
+	 padding: 0em;
+	 width: 2em;
+	
+	 }
+
+
+img{
+margin-right:3px;
+padding: 0 $padding;
+}
+
+}
+
+.row_image{
+max-width: 1400px; 
+width:100%;
+margin: 0 auto;
+height: 551px;
+   margin-right:auto;
+	position:relative;
+
+
+
+#image{
+max-width:100%;
+ position:absolute;
+    left:0;
+    top:0;
+}
+
+
+#text { 
+ position: absolute; 
+   top: 35%;
+   left:38%;   
+    color: rgb( 255, 255, 255 );
+    line-height: 1.169;
+  
+}
+
+#text h2{
+text-align: center;
+
+}
+
+ #text hr {
+margin: 0 auto;
+margin-top: 0.43em;
+width: 100%;
+color: rgb( 255, 255, 255 );
+ 
+}
+
+.btnLatestProject {
+
+   margin-left:2em;
+   font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+   border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnLatestProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

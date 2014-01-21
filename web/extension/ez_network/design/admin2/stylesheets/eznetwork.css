@@ -1,0 +1,253 @@
+/* eznetwork admin2 CSS 20100126 */
+
+/* dashboard */
+#ez-version, #ez-version.ok
+{
+    color: green !important;
+}
+
+#ez-version.not-ok
+{
+    color: red !important;
+}
+
+
+/* topmenu style */
+#header-topmenu ul li.unselected.eznetworknavigationpart a
+{
+    text-shadow: none;
+    color: #6DCFF6;
+}
+
+#header-topmenu ul li.unselected.eznetworknavigationpart a:hover
+{
+    color: #ffe9bd;
+}
+
+div.eznetworknavigationpart #header-topmenu ul li.eznetworknavigationpart a
+{
+  border-top-color: #ff9b00;
+  border-left-color: #ff9b00;
+  border-right-color: #ff9b00;
+}
+
+div.eznetworknavigationpart #header
+{
+    border-bottom-color: #ff9b00;
+}
+
+.loginpage #header #header-design
+{
+    background: transparent url('../images/network/ez_logo_big_enterprise.png') center 80% no-repeat !important;
+}
+
+#header-logo a, #header-logo span
+{
+    background: transparent url('../images/network/ez_logo_small_enterprise.png')  11px 11px no-repeat  !important;
+}
+
+#dashboard-logo
+{
+    background: transparent url('../images/network/ez_logo_big_black_enterprise.png') left top no-repeat  !important;
+}
+
+#footer
+{
+    display: none !important;
+}
+
+.loginpage #footer
+{
+    display: block !important;
+}
+
+
+/* Install screen styles */
+#eznwinst
+{
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    margin: 1em auto;
+    max-width: 801px;
+    padding: 0.8em 0.6em 4em 0.6em;
+    position: relative;
+    -webkit-box-shadow: 2px 2px 5px #bbb;
+    -moz-box-shadow: 2px 2px 5px #bbb;
+    box-shadow: 2px 2px 5px #bbb;
+    background-color: #eaeaea;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#eaeaea));
+    background: -moz-linear-gradient(top,  white,  #eaeaea);
+    background: -ms-linear-gradient(top,  white,  #eaeaea);
+    background: -o-linear-gradient(top,  white,  #eaeaea);
+    background: linear-gradient(top,  white,  #eaeaea);
+    background-clip: padding-box;
+    height: 240px;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+#eznwinst_btn
+{
+    margin: 0.5em;
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+
+#eznwinst .eznwinst_button, #eznwinst .eznwinst_input
+{
+    margin: 4em 0.4em 0.4em 0.4em;
+    padding: 0.7em 1em;
+    display: inline-block;
+    cursor: default;
+    text-decoration: none;
+    color: #888;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-clip: padding-box;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+#eznwinst .eznwinst_button
+{
+    text-align: center;
+}
+
+#eznwinst .eznwinst_input
+{
+    _height: 34px;/* ie6 */
+    _width: 240px;
+}
+
+#eznwinst .eznwinst_button.enabled, #eznwinst .eznwinst_input.enabled
+{
+    cursor: pointer;
+    background-color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f9f9f9));
+    background: -moz-linear-gradient(top,  #fff,  #f9f9f9);
+    background: -ms-linear-gradient(top,  #fff,  #f9f9f9);
+    background: -o-linear-gradient(top,  #fff,  #f9f9f9);
+    background: linear-gradient(top,  #fff,  #f9f9f9);
+}
+
+#eznwinst .eznwinst_input.enabled
+{
+    color: black;
+    border-color: #888;
+}
+
+#eznwinst .eznwinst_input.enabled:focus
+{
+    border-color: #0B4E7A;
+    outline: none;
+    -webkit-box-shadow: 0 0 5px #0B4E7A;
+    -moz-box-shadow: 0 0 5px #0B4E7A;
+    box-shadow: 0 0 5px #0B4E7A;
+}
+
+#eznwinst .eznwinst_button.enabled
+{
+    color: #0B4E7A;
+    background-color: #fafaf9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafaf9), to(#e5e4e5));
+    background: -moz-linear-gradient(top,  #fafaf9,  #e5e4e5);
+    background: -ms-linear-gradient(top,  #fafaf9,  #e5e4e5);
+    background: -o-linear-gradient(top,  #fafaf9,  #e5e4e5);
+    background: linear-gradient(top,  #fafaf9,  #e5e4e5);
+}
+
+#eznwinst div.controllbar
+{
+    width: 100%;
+    height: 25px;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    border-top: 1px solid #aaa;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-clip: padding-box;
+}
+#eznwinst div.controllbar div
+{
+    color: #555;
+    float: left;
+    width: 150px;
+    height: 21px;
+    margin-top: 4px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 3;
+    position: relative;
+    -webkit-transition: color 550ms ease-in-out;
+    -moz-transition: color 550ms ease-in-out;
+    -ms-transition: color 550ms ease-in-out;
+    -o-transition: color 550ms ease-in-out;
+    transition: color 550ms ease-in-out;
+}
+
+#eznwinst div.controllbar span
+{
+    display: inline-block;
+    width: 140px;
+    height: 25px;
+    left: 5px;
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background: -moz-linear-gradient(top,  #fff, #eee);
+    background: -ms-linear-gradient(top,  #fff, #eee);
+    background: -o-linear-gradient(top,  #fff, #eee);
+    background: linear-gradient(top,  #fff, #eee);
+    -webkit-transition: left 400ms ease-in-out 50ms;
+    -moz-transition: left 400ms ease-in-out 50ms;
+    -ms-transition: left 400ms ease-in-out 50ms;
+    -o-transition: left 400ms ease-in-out 50ms;
+    transition: left 400ms ease-in-out 50ms;
+}
+
+#eznwinst div.controllbar img
+{
+    position: absolute;
+    z-index: 2;
+    left: 4px;
+    top: 4px;
+    opacity: 0;
+    display: hidden;
+    -webkit-transition: opacity 550ms ease-in-out;
+    -moz-transition: opacity 550ms ease-in-out;
+    -ms-transition: opacity 550ms ease-in-out;
+    -o-transition: opacity 550ms ease-in-out;
+    transition: opacity 550ms ease-in-out;
+}
+
+#eznwinst div.controllbar.progress img
+{
+    display: inline-block;
+    opacity: 0.7;
+}
+
+#eznwinst div.controllbar.current_start #eznwinst_start { color: #000; }
+
+#eznwinst div.controllbar.current_sanity #eznwinst_sanity { color: #000; }
+#eznwinst div.controllbar.current_sanity span { left: 155px; }
+
+#eznwinst div.controllbar.current_install #eznwinst_install { color: #000; }
+#eznwinst div.controllbar.current_install span { left: 305px; }
+
+
+#eznwinst div.controllbar.current_finalize #eznwinst_finalize { color: #000; }
+#eznwinst div.controllbar.current_finalize span { left: 455px; }

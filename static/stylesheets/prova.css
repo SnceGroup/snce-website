@@ -1,0 +1,51 @@
+/*
+Syntax error: Invalid CSS after "@import ": expected file to import (string or url()), was "compass"
+        on line 1 of /var/www/html/sito_snce/sass/prova.scss
+
+1: /var/www/html/sito_snce/sass/prova.scss
+
+Backtrace:
+/var/www/html/sito_snce/sass/prova.scss:1
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:1147:in `expected'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:1083:in `expected'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:1065:in `expr!'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:313:in `import_directive'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:312:in `loop'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:312:in `import_directive'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:174:in `send'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:174:in `special_directive'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:146:in `directive'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:552:in `block_child'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:542:in `block_contents'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:82:in `stylesheet'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/scss/parser.rb:27:in `parse'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/engine.rb:342:in `_to_tree'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/engine.rb:315:in `_render'
+/usr/lib/ruby/gems/1.8/gems/sass-3.2.10/lib/sass/../sass/engine.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/bin/compass:30
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
+/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/bin/compass:44
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"@import \": expected file to import (string or url()), was \"compass\"\A         on line 1 of /var/www/html/sito_snce/sass/prova.scss\A \A 1: /var/www/html/sito_snce/sass/prova.scss"; }

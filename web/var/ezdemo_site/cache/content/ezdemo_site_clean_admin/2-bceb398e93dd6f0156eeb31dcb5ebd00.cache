@@ -1,0 +1,683 @@
+a:10:{s:7:"content";s:26148:"<div class="content-view-full">
+ <div class="class-landing_page">
+
+<div class="content-navigation">
+
+
+<div class="context-block">
+
+<div class="box-header">
+
+
+<h1 class="context-title"><a href="/ezdemo_site_clean_admin/class/view/23" onclick="ezpopmenu_showTopLevel( event, 'ClassMenu', ez_createAArray( new Array( '%classID%', 23, '%objectID%', 57, '%nodeID%', 2, '%currentURL%', '', '%languages%', [{'locale':'eng-GB','name':'English (United Kingdom)'}] ) ), 'Landing Page', ['class-createnodefeed', 'class-removenodefeed'], -1 ); return false;"><img class="transparent-png-icon" src="/share/icons/crystal-admin/32x32/mimetypes/empty.png" width="32" height="32" alt="Landing Page" title="Landing Page" /></a>&nbsp;Home&nbsp;[Landing Page]&nbsp;</h1>
+
+<div class="header-mainline"></div>
+
+</div>
+
+
+<div class="box-content">
+
+<div class="context-information">
+<p class="left modified">Ultima modifica: 28/11/2007 17:51, <a href="/ezdemo_site_clean_admin/Users/Administrator-users/Administrator-User">Administrator User</a> (ID Nodo: 2, ID Oggetto: 57)</p>
+<p class="right translation">English (United Kingdom)&nbsp;<img src="/share/icons/flags/eng-GB.gif" width="18" height="12" alt="" style="vertical-align: middle;" /></p>
+<div class="break"></div>
+</div>
+
+<div id="window-controls" class="tab-block">
+                            <div class="button-left"><a id="maincontent-hide" class="show-hide-tabs" href="/ezdemo_site_clean_admin/user/preferences/set/admin_navigation_content/0" title="Disbilita i &quot;Tasti&quot; per default mentre navighi i contenuti.">&nbsp;</a></div>
+<ul class="tabs tabs-by-cookie">
+    
+    <li id="node-tab-view" class="first selected">
+                    <a href="/ezdemo_site_clean_admin/(tab)/view" title="Mostra una visualizzazione semplificata del contenuto.">Vedi</a>
+            </li>
+
+    
+    <li id="node-tab-details" class="middle">
+                    <a href="/ezdemo_site_clean_admin/(tab)/details" title="Mostra dettagli.">Dettagli</a>
+            </li>
+
+    
+            <li id="node-tab-translations" class="middle">
+                    <a href="/ezdemo_site_clean_admin/(tab)/translations" title="Mostra traduzioni disponibili.">Traduzioni (1)</a>
+            </li>
+        
+    
+    <li id="node-tab-locations" class="middle">
+                    <a href="/ezdemo_site_clean_admin/(tab)/locations" title="Mostra panoramica collocazioni.">Collocazioni (1)</a>
+            </li>
+
+    
+    <li id="node-tab-relations" class="middle">
+                    <a href="/ezdemo_site_clean_admin/(tab)/relations" title="Mostra panoramica relazioni oggetto.">Relazioni (0)</a>
+            </li>
+
+    
+    <li id="node-tab-ordering" class="last">
+                    <a href="/ezdemo_site_clean_admin/(tab)/ordering" title="Mostra la panoramica dell'ordinamento di pubblicazione.">Ordinamento</a>
+            </li>
+            </ul>
+<div class="float-break"></div>
+<div class="tabs-content">
+    
+<div id="node-tab-view-content" class="tab-content selected">
+    
+    
+
+
+    <div class="block">
+            <label>Name:</label>
+        
+Home        </div>    <div class="block">
+            <label>Layout:</label>
+                <div class="zone-layout-2zoneslayout1 row">
+    <div class="span8">
+        <section class="content-view-block">
+                    </section>
+    </div>
+    <div class="span4">
+        <aside>
+            <section class="content-view-block content-view-aside">
+                            </section>
+        </aside>
+    </div>
+</div>
+
+        </div><div class="break"></div>
+</div>
+
+
+<div id="node-tab-details-content" class="tab-content hide">
+    <div class="block">
+
+
+<table class="list" cellspacing="0" summary="Dettagli del nodo e dell'oggetto come l'autore, la data di creazione, la sezione a cui appartiene, il numero delle versioni e traduzioni, ID Nodo e ID Oggetto.">
+<tr>
+    <th>Creatore</th>
+    <th>Creato il</th>
+    <th>Sezione</th>
+    <th class="tight">Versioni</th>
+    <th class="tight">Traduzioni</th>
+    <th class="tight">ID Nodo</th>
+    <th class="tight">ID Oggetto</th>
+</tr>
+<tr class="bglight">
+    <td><a href="/ezdemo_site_clean_admin/Users/Administrator-users/Administrator-User">Administrator User</a></td>
+    <td>19/11/2007 14:54</td>
+    <td>
+    <form name="changesection" id="changesection" method="post" action="/ezdemo_site_clean_admin/content/edit/57">
+    <input type="hidden" name="RedirectRelativeURI" value="" />
+    <input type="hidden" name="ChangeSectionOnly" value="1" />
+
+    <select id="selected-section-id" name="SelectedSectionId">
+                    <option value="5">Design</option>
+                            <option value="3">Media</option>
+                            <option value="6">Restricted</option>
+                            <option value="4">Setup</option>
+                            <option value="1" selected="selected">Standard</option>
+                            <option value="2">Users</option>
+                </select>
+    <input id="tab-details-set-section" type="submit" value="Imposta" name="SectionEditButton" class="button" />
+    </form>
+
+    </td>
+    <td class="number" align="right">1</td>
+    <td class="number" align="right">1</td>
+    <td class="number" align="right">2</td>
+    <td class="number" align="right">57</td>
+</tr>
+</table>
+</div>
+
+<div class="block">
+<table class="list" cellspacing="0" summary="ID Remoto del Nodo e ID Remoto dell'Oggetto">
+    <tr>
+        <th>ID Remoto del Nodo</th>
+        <th>ID Remoto dell'Oggetto</th>
+    </tr>
+    <tr>
+         <td>f3e90596361e31d496d4026eb624c983</td>
+         <td>8a9c9c761004866fb458d89910f52bee</td>
+    </tr>
+</table>
+</div>
+
+<br />
+
+<div class="block">
+<h3>Stato del contenuto</h3>
+
+
+<form name="statesform" method="post" action="/ezdemo_site_clean_admin/state/assign">
+<input type="hidden" name="ObjectID" value="57" />
+<input type="hidden" name="RedirectRelativeURI" value="" />
+
+<table id="tab-details-states-list" class="list" cellspacing="0" summary="Stati e loro gruppi di stato per l'oggetto attuale.">    <tr class="bgdark">
+    <td colspan="2">
+    <em>Non è configurato alcuno stato per oggetto contenuto. Puoi farlo da <a href="/ezdemo_site_clean_admin/state/groups"> qui </a>.</em>
+    </td>
+    </tr></table>
+
+<div class="block">
+<div class="button-left">
+        <input type="submit" id="tab-details-set-states" value="Imposta stati" name="AssignButton" class="button-disabled" disabled="disabled" title="Non verrà applicato alcuno stato a quest'oggetto contenuto. Forse hai bisogno di avere una politica di accesso più permissiva."/>
+    </div>
+<div class="break"></div>
+</div>
+
+</form>
+</div>
+<script type="text/javascript">
+
+(function( $ )
+{
+    $('#tab-details-states-list select').change(function()
+    {
+        var btn = $('#tab-details-set-states');
+        if ( !btn.attr('disabled') )
+        {
+            btn.removeClass('button').addClass('defaultbutton');
+        }
+    });
+    $('#selected-section-id').change(function()
+    {
+        var btn = $('#tab-details-set-section');
+        if ( !btn.attr('disabled') )
+        {
+            btn.removeClass('button').addClass('defaultbutton');
+        }
+    });
+})( jQuery );
+
+</script>
+<div class="break"></div>
+</div>
+
+
+<div id="node-tab-translations-content" class="tab-content hide">
+    
+<form name="translationsform" method="post" action="/ezdemo_site_clean_admin/content/translation">
+<input type="hidden" name="ContentNodeID" value="2" />
+<input type="hidden" name="ContentObjectID" value="57" />
+<input type="hidden" name="ViewMode" value="full" />
+<input type="hidden" name="ContentObjectLanguageCode" value="" />
+
+<fieldset>
+<legend>Traduzioni esistenti</legend>
+
+<table id="tab-translations-list" class="list" cellspacing="0" summary="Elenco delle traduzioni per il nodo attuale.">
+<tr>
+    <th class="tight"><img src="/design/admin/images/toggle-button-16x16.gif" width="16" height="16" alt="Inverti selezione." title="Inverti selezione." onclick="ezjs_toggleCheckboxes( document.translationsform, 'LanguageID[]' ); return false;"/></th>
+    <th>Lingua</th>
+    <th>Localizzazione</th>
+    <th class="tight">Principale</th>
+    <th class="tight">&nbsp;</th>
+</tr>
+
+<tr class="bglight">
+
+
+<td>
+    <input type="checkbox" name="LanguageID[]" value="4" disabled="disabled" />
+</td>
+
+
+<td>
+<img src="/share/icons/flags/eng-GB.gif" width="18" height="12" alt="eng-GB" />
+&nbsp;<b><a href="/ezdemo_site_clean_admin/(language)/eng-GB" title="Vedi Traduzione.">English (United Kingdom)</a></b></td>
+
+
+<td>eng-GB</td>
+
+
+<td>
+
+<input type="radio"  checked="checked" class="main-translation-radio main-translation-radio-initial" name="InitialLanguageID" value="4" title="Usa questi pulsanti radio per selezionare la lingua principale prescelta." />
+
+</td>
+
+
+<td>
+
+<a href="/ezdemo_site_clean_admin/content/edit/57/f/eng-GB"><img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Modifica in &lt;English (United Kingdom)&gt;." title="Modifica in &lt;English (United Kingdom)&gt;." /></a>
+
+</td>
+
+</tr>
+</table>
+
+<div class="block">
+<div class="button-left">        <input class="button-disabled" type="submit" name="RemoveTranslationButton" value="Elimina selezionati" title="Non ci sono lingue da rimuovere." disabled="disabled" />
+    </div>
+
+<div class="button-right">        <input class="button-disabled" type="submit" name="UpdateInitialLanguageButton" value="Imposta principale" disabled="disabled" title="Non puoi cambiare la lingua principale perché l'oggetto non è tradotto in nessun'altra lingua." />
+    </div>
+
+<div class="break"></div>
+</div>
+
+</fieldset>
+
+
+<div class="block">
+
+<div class="block">
+<input id="tab-translations-alwaysavailable-checkbox" type="checkbox" name="AlwaysAvailable" value="1" checked="checked" /> Usa la lingua principale se non ci sono traduzioni prioritarie.
+</div>
+
+<div class="block">    <input id="tab-translations-alwaysavailable-btn" class="button" type="submit" name="UpdateAlwaysAvailableButton" value="Aggiorna" title="Usa questo pulsante per registrare il valore del checkbox in alto." />
+    <script type="text/javascript">
+    
+    (function( $ )
+    {
+        $('#tab-translations-alwaysavailable-checkbox').change(function()
+        {
+            $('#tab-translations-alwaysavailable-btn').removeClass('button').addClass('defaultbutton');
+        });
+    })( jQuery );
+    
+    </script></div>
+</div>
+
+
+</form>
+<div class="break"></div>
+</div>
+
+
+<div id="node-tab-locations-content" class="tab-content hide">
+    
+<form name="locationsform" method="post" action="/ezdemo_site_clean_admin/content/action">
+<input type="hidden" name="ContentNodeID" value="2" />
+<input type="hidden" name="ContentObjectID" value="57" />
+<input type="hidden" name="ViewMode" value="full" />
+<input type="hidden" name="ContentObjectLanguageCode" value="" />
+
+<table id="tab-locations-list" class="list" cellspacing="0" summary="Collocazioni (aka Nodes) per l'oggetto attuale.">
+<tr>
+    <th class="tight"><img src="/design/admin/images/toggle-button-16x16.gif" width="16" height="16" alt="Inverti selezione." title="Inverti selezione." onclick="ezjs_toggleCheckboxes( document.locationsform, 'LocationIDSelection[]' ); return false;"/></th>
+    <th class="wide">Collocazione</th>
+    <th class="tight">Sotto-elementi</th>
+
+    <th class="tight">Visibilità</th>
+    <th class="tight">Principale</th>
+</tr>    
+<tr class="bglight">
+
+    
+    <td>
+            <input type="checkbox" name="LocationIDSelection[]" value="2" disabled="disabled" title="Questa collocazione non può essere eliminata perché non sei abilitato ad eliminarla o perché in questo momento viene mostrata." />
+        </td>
+
+    
+        <td> <a href="/ezdemo_site_clean_admin">Home</a></td>
+    
+
+    
+    <td class="number" align="right">1</td>
+
+    
+
+
+    
+    <td class="nowrap">
+            Visibile
+        [ <a href="/ezdemo_site_clean_admin/content/hide/2" title="Nascondi la collocazione e tutti i sotto-elementi." >Nascondi</a> ]
+        </td>
+
+    
+    <td>
+
+    
+        <input type="radio" checked="checked" name="MainAssignmentCheck" value="2" disabled="disabled" title="L'elemento che viene mostrato ha una sola collocazione, che per default è la collocazione principale." />
+    
+    
+    </td>
+</tr></table>
+
+
+<input type="hidden" name="HasMainAssignment" value="1" />
+
+
+<div class="block">
+<div class="button-left">
+        <input class="button-disabled" type="submit" name="RemoveAssignmentButton" value="Elimina selezionati" title="Non ci sono collocazioni da rimuovere." disabled="disabled" />
+    
+        <input class="button-disabled" type="submit" name="AddAssignmentButton" value="Aggiungi collocazioni" title="Non è possibile aggiungere collocazioni ad un livello principale." disabled="disabled" />
+    </div>
+
+<div class="button-right">    <input class="button-disabled" type="submit" name="UpdateMainAssignmentButton" value="Imposta principale" disabled="disabled" title="Non puoi impostare la collocazione principale perché vi è solo una collocazione presente." /></div>
+
+<div class="break"></div>
+</div>
+
+</form><div class="break"></div>
+</div>
+
+
+<div id="node-tab-relations-content" class="tab-content hide">
+    
+<table class="list" cellspacing="0" summary="Elenco degli oggetti correlati per l'oggetto attuale.">
+<tr>
+    <th>Oggetti correlati (0)</th>
+    </tr>    <tr><td>L'elemento visualizzato non fa uso di nessun altro oggetto.</td></tr></table>
+
+<br />
+
+
+<table class="list" cellspacing="0" summary="Elenco inverso degli oggetti correlati per l'oggetto attuale.">
+<tr>
+    <th>Oggetti correlati inversi (0)</th>
+    </tr>    <tr><td>L'elemento visualizzato non è in uso da nessun altro oggetto.</td></tr></table>
+
+ 
+<div class="break"></div>
+</div>
+
+
+<div id="node-tab-ordering-content" class="tab-content hide">
+    
+<form name="ordering" method="post" action="/ezdemo_site_clean_admin/content/action">
+<input type="hidden" name="ContentNodeID" value="2" />
+<div class="block">    
+    <fieldset>
+        <legend>Ordine di pubblicazione</legend>
+    
+            
+                                            <input type="hidden" name="ContentObjectID" value="57" />
+                
+        <div class="block">Usa questi controlli per impostare il metodo di ordinamento dei sotto-elementi nella collocazione corrente.</div>
+        <select id="ezasi-sort-field" name="SortingField" title="Usa questi controlli per impostare il metodo di ordinamento dei sotto-elementi nella collocazione corrente.">
+                    <option value="6" >Identificatore della classe</option>
+                    <option value="7" >Nome della classe</option>
+                    <option value="5" >Profondità</option>
+                    <option value="3" >Modificato il</option>
+                    <option value="9" >Nome</option>
+                    <option value="1" >Stringa percorso</option>
+                    <option value="8" selected="selected">Priorità</option>
+                    <option value="2" >Pubblicato</option>
+                    <option value="4" >Sezione</option>
+                </select>
+    
+        <select id="ezasi-sort-order" name="SortingOrder" title="Usa questi controlli per impostare il metodo di ordinamento dei sotto-elementi nella collocazione corrente.">
+            <option value="0">Discendente</option>
+            <option value="1" selected="selected">Ascendente</option>
+        </select>
+    
+        <input  id="ezasi-sort-set" class="button" type="submit" name="SetSorting" value="Imposta" title="Usa questi controlli per impostare il metodo di ordinamento dei sotto-elementi nella collocazione corrente."  />
+    
+            </fieldset>
+</div>
+</form>
+
+
+
+<script type="text/javascript">
+jQuery('#ezasi-sort-field, #ezasi-sort-order').each( function(){
+    jQuery( this ).attr( 'initial', this.value );
+} ).change(function(){
+    var t = $(this), o = $(this.id === 'ezasi-sort-field' ? '#ezasi-sort-order' : '#ezasi-sort-field'), s = $('#ezasi-sort-set');
+    // signal in gui if user needs to save this or not
+    if ( t.val() === t.attr('initial') && o.val() === o.attr('initial') )
+        s.removeClass('defaultbutton').addClass('button');
+    else
+        s.removeClass('button').addClass('defaultbutton');
+});
+</script>
+
+<div class="break"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="controlbar">
+
+
+<form method="post" action="/ezdemo_site_clean_admin/content/action">
+<input type="hidden" name="TopLevelNode" value="2" />
+<input type="hidden" name="ContentNodeID" value="2" />
+<input type="hidden" name="ContentObjectID" value="57" />
+
+<div class="button-left">
+<div class='block'>
+                <select name="ContentObjectLanguageCode">
+                                   <option value="eng-GB" selected="selected">English (United Kingdom)</option>
+                                        <option value="">Nuova traduzione</option>
+                        </select>
+        <input class="button" type="submit" name="EditButton" value="Modifica" title="Modifica i contenuti di questo elemento." />
+    <input class="button-disabled" type="submit" name="MoveNodeButton" value="Sposta" title="Non sei abilitato a spostare questo elemento in un'altra collocazione." disabled="disabled" />
+    <input class="button-disabled" type="submit" name="ActionRemove" value="Elimina" title="Non sei abilitato ad eliminare questo elemento." disabled="disabled" /></div>
+</div>
+
+<div class="button-right">
+	<p class='versions'>
+    
+    <a href="/ezdemo_site_clean_admin/content/history/57" title="Guarda ed amministra (copia, cancella, ecc.) le versioni di quest'oggetto.">Gestisci versioni</a>
+    </p>
+</div>
+
+<div class="float-break"></div>
+</form>
+
+</div>
+
+
+</div>
+
+
+<div id="content-view-children">    <div class="content-view-children">
+
+
+
+<!-- Children START -->
+
+<div class="context-block">
+<form name="children" method="post" action="/ezdemo_site_clean_admin/content/action">
+<input type="hidden" name="ContentNodeID" value="2" />
+<input type="hidden" name="ContentObjectID" value="57" />
+    
+
+<div class="box-header">
+
+    <h2 class="context-title"><a href="/ezdemo_site_clean_admin" title="Su di un livello."><img src="/design/admin/images/up-16x16-grey.png" width="16" height="16" alt="Su di un livello." title="Su di un livello." /></a>&nbsp;Sotto-elementi (1)</h2>
+
+</div>
+
+<div class="box-content">
+
+
+
+<div class="context-toolbar">
+<div class="float-break"></div>
+</div>
+
+    
+    
+    
+    
+                                                                                                                        
+    <input type="hidden" name="NodeID" value="2" />
+    
+    
+    
+    
+
+<script type="text/javascript">
+(function() {
+
+
+var availableLanguages = {'eng-GB': 'English (United Kingdom)','ita-IT': 'Italian'};
+
+var icons = {'eng-GB': '/share/icons/flags/eng-GB.gif','ita-IT': '/share/icons/flags/ita-IT.gif'};
+
+var vcols = {    ezcontentnavigationpart : 'checkbox;crank;name;published_date;translations;priority'.split(';'),
+    ezmedianavigationpart : 'checkbox;crank;thumbnail;name;hidden_status_string;class_name'.split(';'),
+    ezusernavigationpart : 'checkbox;crank;name;creator;published_date'.split(';')};
+
+var confObj = {
+    sortKey: "priority",
+    dataSourceURL: "/ezdemo_site_clean_admin/ezjscore/call/ezjscnode::subtree::2",
+    editPrefixURL: "/ezdemo_site_clean_admin/content/edit",
+    rowsPrPage: 25,
+    sortOrder: 1,
+    nameFilter: '',
+    defaultShownColumns: vcols,
+    navigationPart: "ezcontentnavigationpart",
+    cookieName: "eZSubitemColumns",
+    cookieSecure: false,
+    cookieDomain: "snce.local",
+    languages: availableLanguages,
+    classesString: [{"classID":16,"name":"Article"},{"classID":35,"name":"Banner"},{"classID":17,"name":"Blog"},{"classID":18,"name":"Blog post"},{"classID":19,"name":"Call To Action"},{"classID":20,"name":"Call To Action Feedback"},{"classID":13,"name":"Comment"},{"classID":33,"name":"Event"},{"classID":34,"name":"Event calendar"},{"classID":22,"name":"Feedback form"},{"classID":26,"name":"File"},{"classID":1,"name":"Folder"},{"classID":30,"name":"Forum"},{"classID":32,"name":"Forum reply"},{"classID":31,"name":"Forum topic"},{"classID":36,"name":"Forums"},{"classID":29,"name":"Gallery"},{"classID":27,"name":"Image"},{"classID":23,"name":"Landing Page"},{"classID":28,"name":"Link"},{"classID":25,"name":"Poll"},{"classID":21,"name":"Product"},{"classID":37,"name":"Video"},{"classID":24,"name":"Wiki Page"}],
+    flagIcons: icons
+}
+
+var labelsObj = {
+
+    DATA_TABLE: {
+                        msg_loading: "Caricamento..."
+                    },
+
+    DATA_TABLE_COLS: {
+                        thumbnail: "Icona",
+                        name: "Nome",
+                        visibility: "Visibilità",
+                        type: "Tipo",
+                        modifier: "Modificato da",
+                        modified: "Modificato il",
+                        published: "Pubblicato",
+                        section: "Sezione",
+                        translations: "Traduzioni",
+                        priority: "Priorità",
+                        nodeid: "ID Nodo",
+                        objectid: "ID Oggetto",
+                        noderemoteid: "Id remoto del nodo",
+                        objectremoteid: "Id remoto dell\047oggetto",
+                        objectstate: "Stato dell\047 oggetto"
+                    },
+
+    TABLE_OPTIONS: {
+                        header: "Opzioni tabella",
+                        header_noipp: "Numero elementi per pagina:",
+                        header_vtc: "Colonne tabella visibili:",
+                        button_close: "Chiudi"
+                   },
+
+    ACTION_BUTTONS: {
+                        select: "Seleziona",
+                        select_sav: "Seleziona visibili",
+                        select_sn: "Deseleziona",
+                        select_inv: "Inverti selezione",
+                        create_new: "Crea nuovo/a",
+                        more_actions: "Altre azioni",
+                        more_actions_rs: "Elimina selezionati",
+                        more_actions_ms: "Sposta selezionati",
+                        more_actions_no: "Usa i checkboxes per selezionare uno o più elementi.",
+                        table_options: "Opzioni tabella",
+                        first_page: "&laquo;&nbsp;primo",
+                        previous_page: "&lsaquo;&nbsp;prec",
+                        next_page: "succ&nbsp;&rsaquo;",
+                        last_page: "ultimo&nbsp;&raquo;"
+                    }
+};
+                
+    
+    var createGroups = [
+
+            "Content"
+                    ,
+                "Setup"
+                    ,
+                "Media"
+                    ,
+                "Users"
+            
+    ];
+
+    var createOptions = [
+
+            [
+                                { text: "Article", value: 16 }
+                                ,                        { text: "Banner", value: 35 }
+                                ,                        { text: "Blog", value: 17 }
+                                ,                        { text: "Blog post", value: 18 }
+                                ,                        { text: "Call To Action", value: 19 }
+                                ,                        { text: "Call To Action Feedback", value: 20 }
+                                ,                        { text: "Comment", value: 13 }
+                                ,                        { text: "Event", value: 33 }
+                                ,                        { text: "Event calendar", value: 34 }
+                                ,                        { text: "Feedback form", value: 22 }
+                                ,                        { text: "Folder", value: 1 }
+                                ,                        { text: "Forum", value: 30 }
+                                ,                        { text: "Forum reply", value: 32 }
+                                ,                        { text: "Forum topic", value: 31 }
+                                ,                        { text: "Forums", value: 36 }
+                                ,                        { text: "Gallery", value: 29 }
+                                ,                        { text: "Landing Page", value: 23 }
+                                ,                        { text: "Link", value: 28 }
+                                ,                        { text: "Poll", value: 25 }
+                                ,                        { text: "Product", value: 21 }
+                                ,                        { text: "Wiki Page", value: 24 }
+                                        ]
+                    ,
+                [
+                                { text: "Common ini settings", value: 14 }
+                                ,                        { text: "Template look", value: 15 }
+                                        ]
+                    ,
+                [
+                                { text: "File", value: 26 }
+                                ,                        { text: "Image", value: 27 }
+                                ,                        { text: "Video", value: 37 }
+                                        ]
+                    ,
+                [
+                                { text: "User", value: 4 }
+                                ,                        { text: "User group", value: 3 }
+                                        ]
+                ];
+
+
+YUILoader.require(['datatable', 'button', 'container', 'cookie', 'element']);
+YUILoader.onSuccess = function() {
+    sortableSubitems.init(confObj, labelsObj, createGroups, createOptions);
+};
+var options = [];
+YUILoader.insert(options, 'js');
+
+})();
+</script>
+
+<div id="action-controls-container">
+    <div id="action-controls"></div>
+    <div id="tpg"></div>
+</div>
+<div id="content-sub-items-list" class="content-navigation-childlist"></div>
+<div id="bpg"></div>
+
+<div id="to-dialog-container"></div>
+
+
+
+    <div class="context-toolbar">
+        </div>
+
+</div>
+
+</form>
+
+</div>
+
+
+
+
+<!-- Children END -->
+</div>
+</div>
+
+</div>
+
+ </div>
+</div>";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:1:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:1:"2";}}s:10:"title_path";a:1:{i:0;a:3:{s:4:"text";s:4:"Home";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:1:"2";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:24:{s:9:"object_id";s:2:"57";s:7:"node_id";s:1:"2";s:14:"parent_node_id";s:1:"1";s:8:"class_id";s:2:"23";s:16:"class_identifier";s:12:"landing_page";s:9:"remote_id";s:32:"8a9c9c761004866fb458d89910f52bee";s:14:"node_remote_id";s:32:"f3e90596361e31d496d4026eb624c983";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"1";s:9:"url_alias";s:0:"";s:16:"current_language";s:6:"eng-GB";s:13:"language_mask";s:1:"5";s:12:"main_node_id";s:1:"2";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";a:1:{s:8:"js_files";a:3:{i:0;s:12:"node_tabs.js";i:1;s:11:"ezjsc::yui2";i:2;s:27:"ezajaxsubitems_datatable.js";}}s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:1:"1";s:23:"parent_class_identifier";s:6:"folder";s:21:"parent_node_remote_id";s:32:"629709ba256fe317c3ddcee35453a96a";s:23:"parent_object_remote_id";s:32:"eb8a82de7cc8f159c13a00d9ff21280b";}s:13:"template_list";a:20:{i:0;s:41:"design/admin/templates/node/view/full.tpl";i:1;s:52:"design/admin/templates/infocollection_validation.tpl";i:2;s:42:"design/admin/templates/window_controls.tpl";i:3;s:52:"design/admin/templates/window_controls_extratabs.tpl";i:4;s:34:"design/admin/templates/windows.tpl";i:5;s:34:"design/admin/templates/preview.tpl";i:6;s:50:"design/admin/templates/node/view/admin_preview.tpl";i:7;s:60:"design/standard/templates/content/datatype/view/ezstring.tpl";i:8;s:75:"extension/ezflow/design/standard/templates/content/datatype/view/ezpage.tpl";i:9;s:63:"extension/ezdemo/design/ezdemo/templates/zone/2zoneslayout1.tpl";i:10;s:34:"design/admin/templates/details.tpl";i:11;s:39:"design/admin/templates/translations.tpl";i:12;s:36:"design/admin/templates/locations.tpl";i:13;s:36:"design/admin/templates/relations.tpl";i:14;s:43:"design/admin/templates/navigator/google.tpl";i:15;s:35:"design/admin/templates/ordering.tpl";i:16;s:44:"design/admin/templates/windows_extratabs.tpl";i:17;s:35:"design/admin/templates/children.tpl";i:18;s:44:"design/admin/templates/children_detailed.tpl";i:19;s:49:"design/admin/templates/navigator/alphabetical.tpl";}s:9:"cache_ttl";i:-1;}

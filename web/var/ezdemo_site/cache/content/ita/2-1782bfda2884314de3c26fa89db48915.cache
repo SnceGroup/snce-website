@@ -1,0 +1,22 @@
+a:10:{s:7:"content";s:483:"<div class="content-view-full">
+    <div class="class-landing-page">
+
+    <div class="attribute-page">
+            <div class="zone-layout-2zoneslayout1 row">
+    <div class="span8">
+        <section class="content-view-block">
+                    </section>
+    </div>
+    <div class="span4">
+        <aside>
+            <section class="content-view-block content-view-aside">
+                            </section>
+        </aside>
+    </div>
+</div>
+
+    </div>
+
+    </div>
+</div>
+";s:15:"view_parameters";a:6:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;s:8:"noLayout";b:0;}s:4:"path";a:1:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:1:"2";}}s:10:"title_path";a:1:{i:0;a:3:{s:4:"text";s:4:"Home";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:1:"2";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:24:{s:9:"object_id";s:2:"57";s:7:"node_id";s:1:"2";s:14:"parent_node_id";s:1:"1";s:8:"class_id";s:2:"23";s:16:"class_identifier";s:12:"landing_page";s:9:"remote_id";s:32:"8a9c9c761004866fb458d89910f52bee";s:14:"node_remote_id";s:32:"f3e90596361e31d496d4026eb624c983";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"1";s:9:"url_alias";s:0:"";s:16:"current_language";s:6:"eng-GB";s:13:"language_mask";s:1:"5";s:12:"main_node_id";s:1:"2";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:1:"1";s:23:"parent_class_identifier";s:6:"folder";s:21:"parent_node_remote_id";s:32:"629709ba256fe317c3ddcee35453a96a";s:23:"parent_object_remote_id";s:32:"5c4c0ff4dd99fbd91aca230466a6d360";}s:13:"template_list";a:3:{i:0;s:71:"extension/ezdemo/design/ezdemo/override/templates/full/landing_page.tpl";i:1;s:75:"extension/ezflow/design/standard/templates/content/datatype/view/ezpage.tpl";i:2;s:63:"extension/ezdemo/design/ezdemo/templates/zone/2zoneslayout1.tpl";}s:9:"cache_ttl";i:-1;}

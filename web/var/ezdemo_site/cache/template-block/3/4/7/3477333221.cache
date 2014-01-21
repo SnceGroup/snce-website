@@ -1,0 +1,27 @@
+
+<h2>I miei ultimi contenuti</h2>
+
+<table class="list" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Modificato il</th>
+        <th class="tight"></th>
+    </tr>
+            <tr class="bglight">
+            <td>
+                <a href="/ezdemo_site_clean_admin/footer" title="footer">footer</a>
+            </td>
+            <td>
+                Article
+            </td>
+            <td>
+                12/11/2012
+            </td>
+            <td>
+                            <a href="/ezdemo_site_clean_admin/content/edit/58/f/ita-IT">
+                    <img src="/extension/ezdemo/design/ezdemo/images/edit.gif" width="16" height="16" alt="Modifica" title="Modifica &lt;footer&gt;." />
+                </a>
+                        </td>
+        </tr>
+    </table>

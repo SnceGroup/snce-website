@@ -1,0 +1,978 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../sass/partials/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../sass/partials/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 66, ../sass/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 76, ../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, ../sass/partials/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 96, ../sass/partials/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 105, ../sass/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 118, ../sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 127, ../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 136, ../sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 144, ../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 152, ../sass/partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 162, ../sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 174, ../sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 183, ../sass/partials/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 191, ../sass/partials/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 199, ../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 208, ../sass/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 215, ../sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 219, ../sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 231, ../sass/partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 239, ../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 251, ../sass/partials/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 263, ../sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 274, ../sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 288, ../sass/partials/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 300, ../sass/partials/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 312, ../sass/partials/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 327, ../sass/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 337, ../sass/partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 347, ../sass/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, ../sass/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 371, ../sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 380, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 390, ../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 403, ../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../sass/partials/_header.scss */
+.title {
+  position: fixed;
+  z-index: 2;
+  margin: 0 auto;
+  width: 100%;
+  background: #f0f0f0;
+  background: rgba(240, 240, 240, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000);
+  zoom: 1;
+}
+
+/* line 23, ../sass/partials/_header.scss */
+header {
+  max-width: 83em;
+  padding-top: 2em;
+  margin-left: 2em;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 30, ../sass/partials/_header.scss */
+header h1 {
+  margin-top: -0.15em;
+}
+/* line 34, ../sass/partials/_header.scss */
+header #logo {
+  margin-left: 2em;
+  width: 181px;
+}
+/* line 45, ../sass/partials/_header.scss */
+header h6 {
+  margin: 0 auto;
+  color: black;
+}
+/* line 50, ../sass/partials/_header.scss */
+header h1, header h6 {
+  margin-top: -0.15em;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 68px;
+}
+
+/* line 56, ../sass/partials/_header.scss */
+nav {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 684px;
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 64, ../sass/partials/_header.scss */
+nav point {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5em;
+}
+/* line 72, ../sass/partials/_header.scss */
+nav a {
+  text-decoration: none;
+  color: black;
+}
+/* line 75, ../sass/partials/_header.scss */
+nav a:hover {
+  color: red;
+}
+/* line 79, ../sass/partials/_header.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  float: right;
+  padding: 0 1em;
+}
+/* line 42, ../sass/partials/_blankwork.scss */
+nav ul:before, nav ul:after {
+  content: "";
+  display: table;
+}
+/* line 48, ../sass/partials/_blankwork.scss */
+nav ul:after {
+  clear: both;
+}
+/* line 60, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li:first-child, nav ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav ul li.last {
+  padding-right: 0;
+}
+/* line 85, ../sass/partials/_header.scss */
+nav li {
+  text-align: right;
+  margin-right: 1em;
+}
+
+/* line 93, ../sass/partials/_header.scss */
+.logo_img {
+  margin-right: 2em;
+}
+/* line 96, ../sass/partials/_header.scss */
+.logo_img ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  float: right;
+  padding: 0 1em;
+}
+/* line 42, ../sass/partials/_blankwork.scss */
+.logo_img ul:before, .logo_img ul:after {
+  content: "";
+  display: table;
+}
+/* line 48, ../sass/partials/_blankwork.scss */
+.logo_img ul:after {
+  clear: both;
+}
+/* line 60, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li:first-child, .logo_img ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.logo_img ul li.last {
+  padding-right: 0;
+}
+/* line 102, ../sass/partials/_header.scss */
+.logo_img li {
+  text-align: right;
+  padding: 0em;
+  width: 2em;
+}
+/* line 110, ../sass/partials/_header.scss */
+.logo_img img {
+  margin-right: 3px;
+  padding: 0 1em;
+}
+
+/* line 117, ../sass/partials/_header.scss */
+.row_image {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  height: 551px;
+  margin-right: auto;
+  position: relative;
+}
+/* line 127, ../sass/partials/_header.scss */
+.row_image #image {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 135, ../sass/partials/_header.scss */
+.row_image #text {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  color: white;
+  line-height: 1.169;
+}
+/* line 144, ../sass/partials/_header.scss */
+.row_image #text h2 {
+  text-align: center;
+}
+/* line 149, ../sass/partials/_header.scss */
+.row_image #text hr {
+  margin: 0 auto;
+  margin-top: 0.43em;
+  width: 100%;
+  color: white;
+}
+/* line 157, ../sass/partials/_header.scss */
+.row_image .btnLatestProject {
+  margin-left: 2em;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 169, ../sass/partials/_header.scss */
+.row_image .btnLatestProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/* line 42, spr/*.png */
+.spr-sprite {
+  background: url('/images/spr-s75645ece41.png') no-repeat;
+}
+
+/* line 16, ../sass/test_two_lines.scss */
+body {
+  color: #8d8f92;
+  font-size: 1em;
+  line-height: 1, 4em;
+}
+
+/* line 22, ../sass/test_two_lines.scss */
+a {
+  color: #e95e4c;
+}
+/* line 24, ../sass/test_two_lines.scss */
+a.hover {
+  color: #e74e3a;
+}
+
+/* line 34, ../sass/test_two_lines.scss */
+.first_row {
+  margin: 0 auto;
+  width: 100%;
+  background: white;
+}
+/* line 40, ../sass/test_two_lines.scss */
+.first_row .text_first_row {
+  margin: 0 auto;
+  width: 80%;
+  background: white;
+}
+/* line 46, ../sass/test_two_lines.scss */
+.first_row .text_first_row h2 {
+  text-align: center;
+  color: black;
+}
+/* line 51, ../sass/test_two_lines.scss */
+.first_row .text_first_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 58, ../sass/test_two_lines.scss */
+.first_row .text_first_row p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 65, ../sass/test_two_lines.scss */
+.first_row .box_first_row {
+  margin: 0 auto;
+  width: 80%;
+  height: 280px;
+  background: white;
+}
+/* line 73, ../sass/test_two_lines.scss */
+.first_row .box_first_row .project {
+  float: left;
+  margin-left: 20px;
+  width: 20%;
+  height: 20%;
+  min-width: 237px;
+  min-height: 216px;
+  position: relative;
+}
+/* line 83, ../sass/test_two_lines.scss */
+.first_row .box_first_row .project:first-child {
+  margin-left: 0;
+}
+/* line 87, ../sass/test_two_lines.scss */
+.first_row .box_first_row .project img {
+  width: 237px;
+  height: 216px;
+}
+/* line 93, ../sass/test_two_lines.scss */
+.first_row .box_first_row .info_project {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 107, ../sass/test_two_lines.scss */
+.first_row .box_first_row .info_project h1 {
+  font-size: 1.5em;
+}
+/* line 113, ../sass/test_two_lines.scss */
+.first_row .box_first_row .project:hover .info_project {
+  display: block;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.75;
+}
+/* line 123, ../sass/test_two_lines.scss */
+.first_row .box_first_row .group:before,
+.first_row .box_first_row .group:after {
+  content: "";
+  display: table;
+}
+/* line 127, ../sass/test_two_lines.scss */
+.first_row .box_first_row .group:after {
+  clear: both;
+}
+/* line 133, ../sass/test_two_lines.scss */
+.first_row .box_first_row .span_4_of_4 {
+  width: 100%;
+}
+/* line 137, ../sass/test_two_lines.scss */
+.first_row .box_first_row .span_3_of_4 {
+  width: 74.6%;
+}
+/* line 141, ../sass/test_two_lines.scss */
+.first_row .box_first_row .span_2_of_4 {
+  width: 49.2%;
+}
+/* line 145, ../sass/test_two_lines.scss */
+.first_row .box_first_row .span_1_of_4 {
+  width: 20.8%;
+}
+@media only screen and (max-width: 1302px) {
+  /* line 151, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .box_first_row {
+    width: 80%;
+  }
+  /* line 156, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .project {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-bottom: 3em;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+  }
+  /* line 166, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .info_project {
+    margin-left: 100em;
+    margin: 0 auto;
+    width: 237px;
+    height: 216px;
+  }
+  /* line 174, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .project img {
+    margin: 0 auto;
+    width: 237px;
+    height: 216px;
+  }
+}
+@media only screen and (max-width: 1302px) {
+  /* line 182, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .span_4_of_4 {
+    width: 100%;
+  }
+  /* line 185, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .span_3_of_4 {
+    width: 100%;
+  }
+  /* line 188, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .span_2_of_4 {
+    width: 20.8%;
+  }
+  /* line 191, ../sass/test_two_lines.scss */
+  .first_row .box_first_row .span_1_of_4 {
+    width: 44%;
+  }
+}
+/* line 213, ../sass/test_two_lines.scss */
+.first_row .btnAllProjectDiv {
+  width: 100%;
+  text-align: center;
+}
+/* line 220, ../sass/test_two_lines.scss */
+.first_row .btnAllProjectDiv .btnAllProject {
+  margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 232, ../sass/test_two_lines.scss */
+.first_row .btnAllProjectDiv .btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}
+
+/* line 240, ../sass/test_two_lines.scss */
+.second_row {
+  margin-top: 5em;
+  margin: 0 auto;
+  width: 100%;
+  background: #202020;
+}
+/* line 246, ../sass/test_two_lines.scss */
+.second_row .text_second_row {
+  margin-top: 5em;
+  margin: 0 auto;
+  width: 80%;
+  background: #202020;
+}
+/* line 252, ../sass/test_two_lines.scss */
+.second_row .text_second_row h2 {
+  text-align: center;
+  color: white;
+}
+/* line 258, ../sass/test_two_lines.scss */
+.second_row .text_second_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 265, ../sass/test_two_lines.scss */
+.second_row .text_second_row p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 273, ../sass/test_two_lines.scss */
+.second_row .box_second_row {
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  background: #202020;
+}
+/* line 280, ../sass/test_two_lines.scss */
+.second_row .box_second_row .skill {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 237px;
+  height: 216px;
+  position: relative;
+  background: #202020;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 294, ../sass/test_two_lines.scss */
+.second_row .box_second_row .skill img {
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width: 52px;
+  height: 52px;
+}
+/* line 303, ../sass/test_two_lines.scss */
+.second_row .box_second_row .info_skill {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+  text-align: center;
+  background: #202020;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+/* line 318, ../sass/test_two_lines.scss */
+.second_row .box_second_row .info_skill img {
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+/* line 329, ../sass/test_two_lines.scss */
+.second_row .box_second_row .skill:hover .info_skill {
+  display: block;
+  text-align: center;
+  background: #202020;
+  color: white;
+}
+
+/* line 344, ../sass/test_two_lines.scss */
+.third_row {
+  margin: 0 auto;
+  width: 100%;
+  background: white;
+}
+/* line 350, ../sass/test_two_lines.scss */
+.third_row .text_third_row {
+  margin: 0 auto;
+  width: 80%;
+  background: white;
+}
+/* line 356, ../sass/test_two_lines.scss */
+.third_row .text_third_row h2 {
+  text-align: center;
+  color: black;
+}
+/* line 361, ../sass/test_two_lines.scss */
+.third_row .text_third_row h7 {
+  text-align: center;
+  color: #fc0015;
+  font-size: 1.5em;
+}
+/* line 368, ../sass/test_two_lines.scss */
+.third_row .text_third_row p {
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+}
+/* line 375, ../sass/test_two_lines.scss */
+.third_row .btnAllProjectDiv {
+  width: 100%;
+  text-align: center;
+}
+/* line 382, ../sass/test_two_lines.scss */
+.third_row .btnAllProjectDiv .btnAllProject {
+  margin: 0 auto;
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 20px;
+  background: #fc0015;
+  border: solid #fc0015 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 394, ../sass/test_two_lines.scss */
+.third_row .btnAllProjectDiv .btnAllProject:hover {
+  background: #d60808;
+  text-decoration: none;
+}

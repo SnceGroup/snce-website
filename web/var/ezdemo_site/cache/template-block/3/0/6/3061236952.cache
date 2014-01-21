@@ -1,0 +1,13 @@
+
+<div id="header-topmenu">
+<ul>    <li class="unselected first ezmynavigationpart"><div>    <a href="/ezdemo_site_clean_admin/content/dashboard" title="Amministra oggetti e impostazioni del tuo account.">Pannello strumenti</a></div></li>        <li class="selected middle ezcontentnavigationpart"><div>    <a href="/ezdemo_site_clean_admin/content/view/full/2" title="Amministra i principali contenuti del sito.">Struttura contenuti</a></div></li>    <li class="unselected middle ezmedianavigationpart"><div>    <a href="/ezdemo_site_clean_admin/content/view/full/43" title="Amministra immagini, file, documenti, etc.">Media</a></div></li>    <li class="unselected middle ezusernavigationpart"><div>    <a href="/ezdemo_site_clean_admin/content/view/full/5" title="Amministra utenti, gruppi di utenti e permessi.">Account utenti</a></div></li>    <li class="unselected middle ezsetupnavigationpart"><div>    <a href="/ezdemo_site_clean_admin/setup/cache" title="Amministra impostazioni e funzionalità avanzate.">Impostazioni</a></div></li>    <li class="unselected last eznetworknavigationpart"><div>    <a href="/ezdemo_site_clean_admin/network/service_portal" title="Overview of your Enterprise subscription">Service portal</a></div></li></ul>
+</div>
+
+<script type="text/javascript">
+
+jQuery( '#header-topmenu ul li' ).click(function(){ jQuery(this).addClass('active'); });
+
+</script>
+
+</div>
+</div>

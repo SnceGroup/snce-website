@@ -1,0 +1,45 @@
+                var params = {"iconsList":[],"contentTreeUrl":"/ezdemo_site_clean_admin/content/treemenu/","wwwDirPrefix":"/share/icons/crystal-admin/16x16_indexed/"};
+
+        params.languages = {"eng-GB":"English (United Kingdom)","ita-IT":"Italian"};
+
+                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        params.classes = {"_1":{"name":"Folder","identifier":"folder"},"_3":{"name":"User group","identifier":"user_group"},"_4":{"name":"User","identifier":"user"},"_13":{"name":"Comment","identifier":"comment"},"_14":{"name":"Common ini settings","identifier":"common_ini_settings"},"_15":{"name":"Template look","identifier":"template_look"},"_16":{"name":"Article","identifier":"article"},"_17":{"name":"Blog","identifier":"blog"},"_18":{"name":"Blog post","identifier":"blog_post"},"_19":{"name":"Call To Action","identifier":"call_to_action"},"_20":{"name":"Call To Action Feedback","identifier":"call_to_action_feedback"},"_21":{"name":"Product","identifier":"product"},"_22":{"name":"Feedback form","identifier":"feedback_form"},"_23":{"name":"Landing Page","identifier":"landing_page"},"_24":{"name":"Wiki Page","identifier":"wiki_page"},"_25":{"name":"Poll","identifier":"poll"},"_26":{"name":"File","identifier":"file"},"_27":{"name":"Image","identifier":"image"},"_28":{"name":"Link","identifier":"link"},"_29":{"name":"Gallery","identifier":"gallery"},"_30":{"name":"Forum","identifier":"forum"},"_31":{"name":"Forum topic","identifier":"forum_topic"},"_32":{"name":"Forum reply","identifier":"forum_reply"},"_33":{"name":"Event","identifier":"event"},"_34":{"name":"Event calendar","identifier":"event_calendar"},"_35":{"name":"Banner","identifier":"banner"},"_36":{"name":"Forums","identifier":"forums"},"_37":{"name":"Video","identifier":"video"}}
+
+        params.iconsList['article'] = params.wwwDirPrefix + "mimetypes/document.png";
+        params.iconsList['comment'] = params.wwwDirPrefix + "mimetypes/txt2.png";
+        params.iconsList['common_ini_settings'] = params.wwwDirPrefix + "apps/package_settings.png";
+        params.iconsList['company'] = params.wwwDirPrefix + "apps/kuser.png";
+        params.iconsList['file'] = params.wwwDirPrefix + "mimetypes/binary.png";
+        params.iconsList['folder'] = params.wwwDirPrefix + "filesystems/folder.png";
+        params.iconsList['forum'] = params.wwwDirPrefix + "filesystems/folder_man.png";
+        params.iconsList['forum_message'] = params.wwwDirPrefix + "mimetypes/txt2.png";
+        params.iconsList['forum_reply'] = params.wwwDirPrefix + "mimetypes/txt2.png";
+        params.iconsList['forum_topic'] = params.wwwDirPrefix + "mimetypes/txt2.png";
+        params.iconsList['gallery'] = params.wwwDirPrefix + "filesystems/folder_image.png";
+        params.iconsList['image'] = params.wwwDirPrefix + "mimetypes/image.png";
+        params.iconsList['link'] = params.wwwDirPrefix + "mimetypes/html.png";
+        params.iconsList['person'] = params.wwwDirPrefix + "apps/personal.png";
+        params.iconsList['poll'] = params.wwwDirPrefix + "mimetypes/log.png";
+        params.iconsList['product'] = params.wwwDirPrefix + "apps/package.png";
+        params.iconsList['product_review'] = params.wwwDirPrefix + "mimetypes/txt2.png";
+        params.iconsList['multiprice_product'] = params.wwwDirPrefix + "apps/package.png";
+        params.iconsList['dynamic_vat_product'] = params.wwwDirPrefix + "apps/package.png";
+        params.iconsList['quicktime'] = params.wwwDirPrefix + "mimetypes/quicktime.png";
+        params.iconsList['real_video'] = params.wwwDirPrefix + "mimetypes/real_doc.png";
+        params.iconsList['review'] = params.wwwDirPrefix + "mimetypes/txt2.png";
+        params.iconsList['template_look'] = params.wwwDirPrefix + "apps/package_settings.png";
+        params.iconsList['user'] = params.wwwDirPrefix + "apps/personal.png";
+        params.iconsList['user_group'] = params.wwwDirPrefix + "apps/kuser.png";
+        params.iconsList['weblog'] = params.wwwDirPrefix + "mimetypes/document.png";
+        params.iconsList['windows_media'] = params.wwwDirPrefix + "mimetypes/video.png";
+                params.iconsList['__default__'] = params.wwwDirPrefix + "mimetypes/empty.png";
+
+                ezjslib_preloadImageList( params.iconsList );
+        
+        params.showTips       = true;
+        params.createHereMenu = "simplified";
+        params.autoOpen       = true;
+
+        var i18n = {"expand":"Premi sull icona per mostrare un menù appropriato.","node_id":"ID Nodo","object_id":"ID Oggetto","visibility":"Visibilità","hidden":"Nascosto","visible":"Visibile","hiddenbyparent":"Nascosto dal superiore","disabled":"Il menu ad albero dinamico è disabilitato per questo SiteAccess!","not_exist":"Il nodo non esiste","internal_error":"Errore interno"};
+            

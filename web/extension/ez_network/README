@@ -1,0 +1,13 @@
+eZ Network 1.x
+~~~~~~~~~~~~~~
+
+eZ Publish extension handling integration with Service portal as
+part of the services included in eZ Publish Enterprise Edition.
+
+
+Info
+----
+
+For installation instructions see doc/INSTALL.txt
+For some common asked questions see oc/FAQ.txt
+And for license see LICENSE file.

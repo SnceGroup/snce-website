@@ -1,0 +1,96 @@
+@import "compass";
+@import "partials/normalize";
+@import "partials/blankwork";
+@import "partials/settings";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/constants";
+@import "spr/*.png";
+@import "partials/homepage";
+@import "partials/projects";
+@import "partials/expertise";
+@import "partials/team";
+@import "partials/follow";
+
+ //
+  
+
+ //IMPOSTAZIONI GENERALI
+body{
+margin: 0 auto;
+//font-family: ProximaNova;
+color: $ligthFont;
+font-size:$font_size; 
+line-height:$line_height;
+} 
+
+a{
+color: $linkColor;
+&.hover {
+color:$linkHover;
+}
+}
+
+
+// riga immagine pagine interne del sito
+.row_image_internal{
+max-width: 1400px; 
+width:100%;
+margin: 0 auto;
+height: 325px;
+   margin-right:auto;
+	position:relative;
+
+
+
+#image{
+max-width:100%;
+ position:absolute;
+    left:0;
+    top:0;
+}
+
+#text { 
+ position: absolute; 
+   top: 45%;
+   left:38%;   
+    color: rgb( 255, 255, 255 );
+    line-height: 1.169;
+  
+}
+
+#text h2{
+text-align: center;
+
+}
+
+ #text hr {
+margin: 0 auto;
+margin-top: 0.43em;
+width: 100%;
+color: rgb( 255, 255, 255 );
+ 
+}
+}  
+
+ .popup a{color:#fe4a5d;text-decoration: none;}	
+  .popup h2{}
+  .popup{
+  color:rgb( 25, 25, 25 );
+  
+  }
+   
+
+  point{
+	  text-decoration: none;
+	  color: red;
+	  font-size: 1.5em;
+	 
+	 }
+
+
+
+
+
+
+

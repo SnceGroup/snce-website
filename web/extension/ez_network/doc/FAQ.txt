@@ -1,0 +1,175 @@
+===
+Q: The synchronization cronjob fails when attempting run, and says that the installation key was not found in the database. But the key is in the local database and available in the eZ Network system. What could then be wrong?
+"root@acme7 www]# /usr/local/php5/bin/php ./runcronjobs.php sync_network
+Running cronjob part 'sync_network'
+Running extension/ez_network/cronjobs/syncnetwork.php
+Starting eZ Network syncronization.
+Use the --clear-all to reset client side data.
+eZ Network client 0.4
+
+Fetching max remote values
+Syncronization of: eZNetBranch failed. Aborting syncronization.
+
+eZNetInstallation object with the installation key (dummy_identification) was not found in the database.
+Make sure the installation key is correct and has been sent to eZ Systems or contact your system administrator."
+
+A: The server seems incapable of communicating with SSL. If this can not be fixed, you can change the preferred port number from 443 to 80 in extension/ez_network/sync.ini.append.php, to switch to unencrypted communication:
+[NetworkSettings]
+#Port=443
+Port=80
+
+===
+Q: When trying to run a eZ Network cronjob, a error message stating that it could not steal the cronjob part lock appears. Why is that?
+"$ php ./runcronjobs.php sync_network
+Running cronjob part 'sync_network'
+Running extension/ez_network/cronjobs/syncnetwork.php
+Forcing to steal the mutex lock: extension/ez_network/cronjobs/syncnetwork.php
+Stealing mutex. Old process has run too long.
+Failed to steal cronjob part lock."
+
+A: The user account you are logged in with has most likely not write access to the var/ folder in which the mutex files are stored. The solution is to gain access to the var/ folder.
+
+===
+Q: I am using APC and keep getting a "zend_mm_heap corrupted" error when running the CLI scripts. How do I prevent this from happening?
+
+A: Try adding this setting to the php.ini file: "apc.filters=block.module".
+Make sure that the correct INI file is used when running CLI scripts.
+If this does not help, try upgrading APC.
+
+
+===
+Q: I get the error message "failed to map segment from shared object: Permission denied" when I try to run a eZ Network script or cron. What does it mean?
+
+A: This is a permissions error with the operating system. Run the command
+  restorecon *.so
+in the Loaders folder and restart the web server software. If this does not resolve the issue, other commands to try are:
+  chcon -t shlib_t *.so
+or
+  chcon -t texrel_shlib_t *.so
+
+===
+Q: The certify.php script reported that my MySQL database tables are non-InnoDB type. Is this a problem?
+
+A: You can experience performance issues, and data integrity problems over time. We recommend that you correct the matter with the ezconvertmysqltabletype.php script.
+php bin/php/ezconvertmysqltabletype.php --help
+example:
+php bin/php/ezconvertmysqltabletype.php --newtype=innodb
+
+===
+Q: I run the monitor script "php runcronjobs.php monitor" but it keeps saying "No monitors run". What is wrong?
+
+A: All the different monitors executed by the monitor script run within their own intervals, so nothing is wrong, it is just not the time to run them. You can force them to run by adding a parameter to the command:
+"php runcronjobs.php monitor --force".
+
+===
+Q: The cronjobs are not working, but I have tested each cronjob command successfully. What is wrong?
+
+A: There could be a possibility that the crontab is executed with a different shell than what you are using, or with a different environment.
+So if you have not specified the path to the php CLI executable, it is not actually run. Change the cronjob commands and specify the path to the executable.
+
+===
+Q: The intialize script did not create a crontab example file. What are the cronjobs I need to set up?
+
+A: This is how the crontab example file would look like:
+-begin file content-
+#  -- INSTALLATION_NAME -- eZ Network crontab setup --
+*/5 * * * * cd INSTALLATION_PATH && PHP_EXEC -d memory_limit=512M -d safe_mode=0 runcronjobs.php -q monitor
+3 */8 * * * cd INSTALLATION_PATH && PHP_EXEC -d memory_limit=512M -d safe_mode=0 runcronjobs.php -q sync_network
+-end file content-
+..where INSTALLATION_NAME is the name of your website, INSTALLATION_PATH is the path to eZ Publish on your webserver, and PHP_EXEC is the path including the name of the PHP CLI executable.
+
+You may modify the intervals, but you should keep them somewhat close to the intervals suggested.
+
+Another alternative is to get the proper file access to the eZ Publish root directory, and run the initialize script again. It will not modify important items in the database, but it will attempt to create a nw_crontab.txt file:
+php extension/ez_network/scripts/initialize.php
+
+===
+Q: Where do I find the "installation ID"?
+
+A: The eZ Network intialize script prints this to standard output, but also stores it in the eZ Publish database.
+You can extract it with this SQL statement: SELECT value FROM ezsite_data WHERE name='ezpublish_site_id';
+
+===
+Q: how do I drop the eZ Network tables in the database?
+
+A: This operation should only be performed by trained eZ crew, or by client representatives, if eZ has requested it.
+dropping tables:
+DROP TABLE `ezx_ezpnet_branch`, `ezx_ezpnet_installation`, `ezx_ezpnet_large_store`, `ezx_ezpnet_module_branch`, `ezx_ezpnet_module_inst`, `ezx_ezpnet_module_patch`, `ezx_ezpnet_mod_patch_item`, `ezx_ezpnet_mon_group`, `ezx_ezpnet_mon_item`, `ezx_ezpnet_mon_result`, `ezx_ezpnet_mon_value`, `ezx_ezpnet_patch`, `ezx_ezpnet_patch_item`, `ezx_ezpnet_patch_sql_st`, `ezx_ezpnet_soap_log`, `ezx_ezpnet_storage`;
+
+drop these too, if they exist:
+drop table `ezx_ezpnet_monitem_fcl`, `ezx_ezpnet_monitem_occl`;
+
+NB: do not remove the ez_publish_site_id in the ezsite_data table, unless you know what you are doing.
+
+===
+Q: i can not start the cronjobs.
+when attempting to run sync_network with this command:
+php runcronjobs.php sync_network
+
+the only result is:
+Running cronjob part 'sync_network'
+
+A: the runcronjobs script can not find the cronjob script file you specified.
+make sure that this the setting "ExtensionDirectories" in settings/override/cronjob.ini.append.php is not cleared.
+remember to check the cronjob.ini.append.php file in the settings/ directory in your extensions, if present.
+This is the setting you need to avoid:
+[CronjobSettings] 
+ExtensionDirectories[]
+
+===
+Q: i get this error when i try to run the initialize script:
+Fatal error: main(): Failed opening required 'extension//classes/network/eznetstorage.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laprensa/public_html/ezpublish390/extension/ez_network/scripts/initialize.php on line 274
+
+Fatal error: eZ Publish did not finish its request
+The execution of eZ Publish was abruptly ended, the debug output is present below. 
+
+A: check that you have enabled the ez_network extension in site.ini
+
+===
+Q: when running initialize.php, it ends with a fatal error similar to this:
+PHP Fatal error:  Call to undefined function:  objectscreated()
+in /home/il/htdocs/ez39/extension/ez_network/scripts/initialize.php on
+line 342
+
+A: make sure you are running the latest version of the ez_network extension.
+
+===
+Q: the initialize script fails to modify the database:
+[root@87105-web1 ez39]# php extension/ez_network/scripts/initialize.php
+Creating DB schema.
+Fatal error: A database transaction in eZ Publish failed.
+
+The current execution was stopped to prevent further problems.
+You should contact the System Administrator (nospam@anonymized.com)
+of this site with the information on this page.
+The current transaction ID is TRANSID-16f1647a05e95d3bbd73fb8a783a221a
+and has been logged.
+Please include the transaction ID and the current URL when contacting
+the system administrator.
+
+A: drop the network tabels and try again. see question "how do I drop the eZ Network tables in the database?".
+
+===
+Q: the certify script (or other scripts inthe ez_network extension) will not start. example:
+[root@87105-web1 ez39]# php extension/ez_network/scripts/certify.php
+The encoded file /home/il/htdocs/ez39/extension/ez_network/scripts/certify.php is not permissioned for this server
+
+A: the IP address you entered eZ Network installation object is not the same as the IP on the server you are installing on.
+make sure that you use the IP address from device "eth0" or similar for Windows.
+For Solaris servers, you must use the hostname instead of IP address, if the network interface is called something else than "eth0".
+
+===
+Q: I get following error when I run:
+$ php extension/ez_network/scripts/certify.php
+Error initializing script: database error: .
+
+A: Make sure that the PHP CLI is compiled with mysql support
+
+===
+Q : Ez_network patch fails with windows/apache installations
+
+A: Make sure you meet the specific Windows requirements :
+1) On Windows, CygWin is a requirement for Network.
+2) The PATH environment variable must be set to include the CygWin bin directory (which could for example be in C:\cygwin\bin). Example guide for that: http://support.microsoft.com/kb/310519
+
+==

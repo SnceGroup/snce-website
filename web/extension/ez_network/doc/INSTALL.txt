@@ -1,0 +1,158 @@
+============================================
+eZ Network Client installation instructions
+============================================
+
+------------
+Introduction
+------------
+
+If you have any problems while installing, please read the eZ Network FAQ in the doc/ directory before contacting the
+eZ representative.
+
+See the definitions at the end of this file, if you have problems understanding the instructions.
+
+IMPORTANT: If you are attempting to install eZ Network on a copy of a site, please refer to section "Installing a on a
+duplicate site"
+
+
+------------
+Requirements
+------------
+
+These are the requirements for the eZ Network extension:
+* Official eZ Publish Enterprise requirements (http://ez.no/ezpublish/requirements)
+* Access to GNU patch command (required for manual patching)
+* Outbound connection access to critmon1.ez.no:443 (required for monitoring)
+
+Specific Windows requirements:
+1) On Windows, CygWin is a requirement for Network.
+2) The PATH environment variable must be set to include the CygWin bin directory (which could for example be in C:\cygwin\bin). Example guide for that: http://support.microsoft.com/kb/310519
+
+
+------------------
+Installation steps
+------------------
+
+1. eZ Network extension Setup
++++++++++++++++++++++++++++++
+
+Cluster note: In the case of cluster setup you have gotten a set of pre-configured ez_network extensions for the
+              specific nodes involved in the cluster.
+
+1.1 The tarball must be extracted in the "extension/" directory.
+    The tarball will override the directory "ez_network/".
+    Remember to remove the "ez_network/" directory before you extract the files, if it already exists.
+
+1.2 Enable the extension by adding it to the ActiveExtension list in settings/override/site.ini.append.php
+    [ExtensionSettings]
+    ActiveExtensions[]=ez_network
+
+1.3 Regenerate autoload array
+    Check the eZ Publish docs for your version on how this is done.
+    Or go to Setup -> Extensions and click on the button there.
+
+
+
+2. Initialize the eZ Network application
+++++++++++++++++++++++++++++++++++++++++
+
+Alternative: You can skip step #2 and #3 by instead using web installer available on "Service Portal" tab in admin gui.
+
+This script will initialize the database ( create the necessary database tables ), and log MD5 sums of eZ Publish files
+to the database ++. You should have received a predefined installation key (a string of 32 characters), if not contact
+your eZ representative.
+
+2.1 From ezroot, run the script "extension/ez_network/scripts/initialize.php" with the --installationkey parameter like:
+    php extension/ez_network/scripts/initialize.php --installationkey=<installation_key>
+
+
+
+3.Set up the cronjobs
++++++++++++++++++++++
+
+Cluster note: 'sync_network' & 'monitor' cronjobs should only execute on the master server.
+
+The initialize (2.1) script created a file called nw_crontab.txt that contains the list of cronjobs that must be set up.
+You may modify the intervals as you choose but please follow these recommendations:
+
+3.1 sync_network � updates the client with the latest data.
+    This cronjob part will download and install the latest monitors from ez.no. It will also sync information about
+    patches (but not install them). This cronjob can for example be run every 8 hours. ( 24:00, 08:00, 16:00 )
+
+3.2 monitor � runs the monitor, and uploads the result to support.ez.no (via critmon1.ez.no)
+    The results of the monitor is uploaded to support.ez.no once all the monitors have been run. If the upload fails,
+    it'll try to upload the result the next time. This cronjob can be run every 5 minutes.
+
+Note:
+That the sync_network cronjob has to be run successfully before the other crons will work.
+If you ran the initialize script with a key provided to you, then you should be able to connect to the eZ Network system
+right away.
+
+
+
+On *nix platforms:
+------------------
+To access the cronjob list (crontab), execute the command "crontab -e -u [crontab user]".
+For more information about the crontab, see http://en.wikipedia.org/wiki/Crontab.
+
+
+On Windows platforms:
+---------------------
+To access the Windows task scheduler interface, following this sequence:
+Start->All Programs->Accessories->System Tools->Scheduled Tasks
+For more information on how to use it, see http://en.wikipedia.org/wiki/Scheduled_Tasks
+
+
+--------------------------------
+Installing a on a duplicate site
+--------------------------------
+
+If you are setting up a copy of a site that is already running eZ Network,
+you have to remove the eZ Network Installation ID from its database before you run the eZ Network cronjobs.
+The Installation ID has to be unique per installation.
+
+Typical situations where you want to install eZ Network on a copy of a web site, is staging servers, test servers, live
+servers, and so on.
+
+This is where you locate and remove the Installation ID:
+
+1. Access your database
++++++++++++++++++++++++
+Refer to the manual for your database.
+
+
+2. Locate the Installation ID
+++++++++++++++++++++++++++++++
+Select value from ezsite_data where name='ezpublish_site_id';
++----------------------------------+
+| value                            |
++----------------------------------+
+| 3ac8afd225280b93be31e93f953bdb51 |
++----------------------------------+
+1 row in set (0.05 sec)
+
+
+3. Remove the Installation ID+
+++++++++++++++++++++++++++++++
+Delete from ezsite_data where name='ezpublish_site_id';
+Query OK, 1 row affected (0.08 sec)
+
+Now you can start the installation process, which will provide you with a unique Installation ID.
+
+
+-----------
+Definitions
+-----------
+
+ezroot:
+The directory where you have installed eZ Publish.
+
+ez network tarball:
+The a compressed file provided by a eZ representative, containing the eZ Network extension.
+
+eZ representative:
+This can be an employee of eZ Systems, or an employee of a certfied eZ Systems partner, who are your contact person in
+matters related to eZ Network.
+
+the intialize script:
+This is "extension/ez_network/scripts/initialize.php".

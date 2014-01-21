@@ -1,0 +1,100 @@
+@import "partials/constants";
+
+//FOOTER
+
+.footer_div{
+width: 100%;
+min-height: 275px;
+margin: 0 auto;
+background: rgb(25,25,25);
+
+}
+
+footer {
+
+padding-top: 2em;
+width: 960px;
+height:100%;
+margin: 0 auto;
+background: rgb(25,25,25);
+
+h1 {
+margin-top:-0.15em;
+
+}
+
+img{
+
+}
+
+.box_footer_row{
+
+ margin: 0 auto;
+ width:100%;
+height: 120px;
+ 
+ background: rgb(25,25,25);
+
+ 
+ .footer_element{
+ float:left;
+ margin-left:6px;
+ margin-top:15px;
+ 
+// width:30%;
+// height:20%;
+background: rgb(25,25,25);
+ width:230px;
+height: 117px;
+ position: relative;
+ font-size: 0.8em;
+color: grey;
+ 
+ h1{
+font-size: 1.3em;
+color: white;
+}
+ 
+ 
+  .newsletter {
+     background-color:  rgb(48,48,48);
+	  border: 0px solid;
+     color: grey;
+	 height:20px;
+	  width: 130px;
+     font-style: normal;
+     padding: 1px;
+     }
+	 
+	 
+	 .ok_newsletter {
+	 margin-left:2px;
+     background-color:  rgb(48,48,48);
+	  border: 0px solid;
+     color: grey;
+	 height:20px;
+	  width: 20px;
+     font-style: normal;
+     padding: 1px;
+     }
+ 
+ 
+ }
+ 
+ 
+ }
+
+ .copy_footer_row{
+
+ margin: 0 auto;
+ width:100%;
+ font-size: 0.6em;
+color: grey;
+ background: rgb(25,25,25);
+ 
+ }
+ 
+ 
+}
+
+

@@ -1,0 +1,11 @@
+<?php /* #?ini charset="utf-8"?
+
+[RegionalSettings]
+Locale=ita-IT
+TextTranslation=enabled
+
+[ExtensionSettings]
+ActiveExtensions[]=ezstarrating
+ActiveExtensions[]=ezdemo
+ActiveExtensions[]=ezcomments
+*/ ?>
